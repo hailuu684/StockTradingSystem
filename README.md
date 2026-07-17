@@ -241,6 +241,9 @@ articles = crawler.fetch_articles(
 
 ## Installation
 
+### 0. You need to subscribe vnstock (paid package)
+This repo is built based on paid vnstock package (syntax is different compared to free-tier one)
+
 ### 1. Clone the repository
 
 ```bash
