@@ -1,0 +1,11 @@
+{
+    "analytics_config": {
+      "valuation": {
+        "index": "VN30",
+        "pe": { "duration": "1Y" },
+        "pb": { "duration": "1Y" },
+        "evaluation": { "duration": "1Y" }
+      }
+    }
+  }
+  

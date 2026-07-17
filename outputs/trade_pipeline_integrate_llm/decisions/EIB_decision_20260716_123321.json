@@ -1,0 +1,37 @@
+{
+  "action": "IGNORE",
+  "confidence": 0.85,
+  "horizon": "monitoring",
+  "entry_price_low": 18859.5,
+  "entry_price_high": 19240.5,
+  "stop_loss": 18669.0,
+  "base_target": 11352.95,
+  "bull_target": 21150.02,
+  "bear_target": 9650.01,
+  "suggested_quantity": 0,
+  "suggested_position_value": 0.0,
+  "buy_strategy": "wait",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 18669.0",
+    "Reduce if RSI14 fails to recover above 30",
+    "Exit if foreign net selling continues to accelerate"
+  ],
+  "reason": "EIB đang có chỉ số kỹ thuật yếu với RSI quá bán nhưng xu hướng giảm mạnh, định giá P/E cao (48.46) so với ROE thấp (4.45%), rủi ro/lợi nhuận không hấp dẫn.",
+  "key_risks": [
+    "Áp lực bán ròng liên tục từ khối ngoại",
+    "Hiệu quả hoạt động (ROE) thấp",
+    "Định giá P/E quá cao so với trung bình ngành ngân hàng",
+    "Xu hướng giá đang trong giai đoạn điều chỉnh mạnh"
+  ],
+  "monitoring_triggers": [
+    "Sự đảo chiều của dòng tiền khối ngoại",
+    "Cải thiện chỉ số RSI14 trên mức 40",
+    "Sự phục hồi của xu hướng giá trên đường trung bình động 20 ngày"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "IGNORE",
+  "llm_action": "IGNORE",
+  "decision_agreement": true
+}

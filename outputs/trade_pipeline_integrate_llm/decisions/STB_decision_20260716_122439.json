@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.65,
+  "horizon": "3M",
+  "entry_price_low": 71082.0,
+  "entry_price_high": 72518.0,
+  "stop_loss": 69495.65,
+  "base_target": 28098.82,
+  "bull_target": 80707.77,
+  "bear_target": 23883.99,
+  "suggested_quantity": 2089,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "pullback",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 69495.65",
+    "Reduce position if RSI exceeds 75",
+    "Take profit at bull target 80707.77"
+  ],
+  "reason": "STB đang trong nhịp điều chỉnh về MA20 với dòng tiền ngoại và tự doanh ngắn hạn cải thiện, tuy nhiên định giá P/E cao (28.44) và rủi ro kỹ thuật từ MACD âm cho thấy cần thận trọng.",
+  "key_risks": [
+    "Định giá P/E cao so với trung bình ngành",
+    "MACD histogram âm cho thấy động lực tăng giá ngắn hạn yếu",
+    "Áp lực bán ròng từ khối ngoại trong khung 20 ngày"
+  ],
+  "monitoring_triggers": [
+    "Duy trì trên mức hỗ trợ 69495.65",
+    "Sự cải thiện của MACD histogram",
+    "Biến động khối lượng giao dịch (Volume ratio 20D)"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

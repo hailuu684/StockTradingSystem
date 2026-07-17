@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.45,
+  "horizon": "3M",
+  "entry_price_low": 25641.0,
+  "entry_price_high": 26159.0,
+  "stop_loss": 25382.0,
+  "base_target": 29793.855,
+  "bull_target": 31581.4863,
+  "bear_target": 24790.4919,
+  "suggested_quantity": 5791,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "staged_accumulation",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 25382.0",
+    "Reduce position if RSI14 fails to recover above 40",
+    "Take profit at base target 29793.855"
+  ],
+  "reason": "CMG đang ở vùng quá bán (RSI 28.2) với định giá P/E hấp dẫn, tuy nhiên dòng tiền khối ngoại vẫn rút ròng mạnh và xu hướng kỹ thuật chưa rõ ràng. Cần theo dõi thêm sự ổn định của dòng tiền trước khi giải ngân mạnh.",
+  "key_risks": [
+    "Dòng tiền khối ngoại tiếp tục bán ròng gây áp lực lên giá",
+    "Xu hướng kỹ thuật ngắn hạn đang suy yếu (MACD âm)",
+    "Mất cân bằng sổ lệnh (order-book imbalance) tiêu cực"
+  ],
+  "monitoring_triggers": [
+    "Sự đảo chiều của dòng tiền khối ngoại",
+    "MACD histogram cắt lên trên đường 0",
+    "Khối lượng giao dịch tăng đột biến vượt trung bình 20 phiên"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "IGNORE",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

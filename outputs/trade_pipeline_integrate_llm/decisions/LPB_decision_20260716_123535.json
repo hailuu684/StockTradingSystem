@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.65,
+  "horizon": "3M",
+  "entry_price_low": 51480.0,
+  "entry_price_high": 52520.0,
+  "stop_loss": 50891.05,
+  "base_target": 34818.99,
+  "bull_target": 60725.45,
+  "bear_target": 29596.15,
+  "suggested_quantity": 2884,
+  "suggested_position_value": 149968000.0,
+  "buy_strategy": "pullback",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 50891.05",
+    "Reduce position if RSI exceeds 75",
+    "Take profit at bull target 60725.45"
+  ],
+  "reason": "Mặc dù điểm số tổng hợp khá tốt (67.54) và xu hướng kỹ thuật mạnh, nhưng tỷ lệ rủi ro/lợi nhuận hiện tại đang âm do định giá cao (P/B 3.11). Cần theo dõi thêm sự cải thiện của dòng tiền và sự ổn định của vùng hỗ trợ MA20 trước khi giải ngân.",
+  "key_risks": [
+    "Định giá P/B cao so với trung bình ngành",
+    "Dòng tiền vào yếu (Volume ratio 20D thấp)",
+    "Áp lực bán từ sổ lệnh (Order-book imbalance âm)"
+  ],
+  "monitoring_triggers": [
+    "Sự cải thiện của Volume ratio 20D",
+    "Sự đảo chiều của MACD histogram từ âm sang dương",
+    "Duy trì trên mức hỗ trợ 50891.05"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

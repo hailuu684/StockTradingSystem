@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "name": "Nhân Dân",
+    "config_name": "nhandan",
+    "type": "Cơ quan TW",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Cơ quan trung ương của Đảng Cộng Sản Việt Nam"
+  },
+  {
+    "id": 2,
+    "name": "Tiền Phong",
+    "config_name": "tienphong",
+    "type": "Cơ quan TW",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Cơ quan trung ương của Đoàn TNCS Hồ Chí Minh"
+  },
+  {
+    "id": 3,
+    "name": "VietNamNet",
+    "config_name": "vietnamnet",
+    "type": "Bộ Ngành",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Cơ quan chủ quản Bộ Dân Tộc và Tôn Giáo"
+  },
+  {
+    "id": 4,
+    "name": "Dân Trí",
+    "config_name": "dantri",
+    "type": "Bộ Ngành",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Cơ quan của Bộ Nội vụ"
+  },
+  {
+    "id": 5,
+    "name": "VnExpress",
+    "config_name": "vnexpress",
+    "type": "Bộ Ngành",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Thuộc Bộ Khoa học và Công nghệ"
+  },
+  {
+    "id": 6,
+    "name": "Báo Đầu Tư",
+    "config_name": "baodautu",
+    "type": "Bộ Ngành",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Thuộc Bộ Tài chính"
+  },
+  {
+    "id": 7,
+    "name": "Thời Báo Tài Chính",
+    "config_name": "thoibaotaichinhvietnam",
+    "type": "Bộ Ngành",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Báo điện tử thuộc Bộ Tài Chính"
+  },
+  {
+    "id": 8,
+    "name": "Thanh Niên",
+    "config_name": "thanhnien",
+    "type": "Tổ chức TW",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Diễn đàn của Hội LHTN Việt Nam"
+  },
+  {
+    "id": 9,
+    "name": "Tuổi Trẻ",
+    "config_name": "tuoitre",
+    "type": "Địa phương",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Cơ quan báo của Thành Đoàn TP.HCM"
+  },
+  {
+    "id": 10,
+    "name": "Người Lao Động",
+    "config_name": "nld",
+    "type": "Địa phương",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Quản lý bởi Thành ủy TP.HCM"
+  },
+  {
+    "id": 11,
+    "name": "Pháp Luật TP.HCM",
+    "config_name": "plo",
+    "type": "Địa phương",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Cơ quan chủ quản: UBND TP.HCM"
+  },
+  {
+    "id": 12,
+    "name": "Kinh Tế Sài Gòn",
+    "config_name": "ktsg",
+    "type": "Địa phương",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Tạp chí Kinh tế Sài Gòn của UBND Tp. HCM"
+  },
+  {
+    "id": 13,
+    "name": "VnEconomy",
+    "config_name": "vneconomy",
+    "type": "Chuyên ngành",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Tạp chí của Hội Khoa học Kinh tế Việt Nam"
+  },
+  {
+    "id": 14,
+    "name": "Diễn Đàn Doanh Nghiệp",
+    "config_name": "dddn",
+    "type": "Chuyên ngành",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Cơ quan của Liên đoàn Thương mại và Công nghiệp VN"
+  },
+  {
+    "id": 15,
+    "name": "PetroTimes",
+    "config_name": "petrotimes",
+    "type": "Chuyên ngành",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Tạp chí của Hội Dầu khí Việt Nam"
+  },
+  {
+    "id": 16,
+    "name": "Znews (Tri thức)",
+    "config_name": "znews",
+    "type": "Chuyên ngành",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Tạp chí điện tử của Hội Xuất bản Việt Nam"
+  },
+  {
+    "id": 17,
+    "name": "CafeF",
+    "config_name": "cafef",
+    "type": "Trang tin",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Trang thông tin điện tử của khối VCCorp"
+  },
+  {
+    "id": 18,
+    "name": "CafeBiz",
+    "config_name": "cafebiz",
+    "type": "Trang tin",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Trang thông tin điện tử của khối VCCorp"
+  },
+  {
+    "id": 19,
+    "name": "VietStock",
+    "config_name": "vietstock",
+    "type": "Trang tin",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Cổng thông tin Tài chính, Chứng khoán (CTCP Tài Việt)"
+  },
+  {
+    "id": 20,
+    "name": "24h",
+    "config_name": "24h",
+    "type": "Tổng hợp",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Trang tin điện tử tổng hợp 24h"
+  },
+  {
+    "id": 21,
+    "name": "Người Quan Sát",
+    "config_name": "nguoiquansat",
+    "type": "Tổng hợp",
+    "supports_rss": true,
+    "supports_sitemap": true,
+    "description": "Trang TTĐTTH của báo Đầu tư đổi mới INTECH"
+  }
+]

@@ -1,0 +1,13 @@
+{
+    "llm_config": {
+      "provider": "gemini",
+      "api_key_env": "AIzaSyC9mRECNTyI6o9dPZW5wYNlgzm7UVVpwR8",
+      "api_key": "AIzaSyC9mRECNTyI6o9dPZW5wYNlgzm7UVVpwR8",
+      "llm_model": "gemini-3.1-flash-lite",
+      "temperature": 0.2,
+      "max_output_tokens": 8000,
+      "require_json": true,
+      "retry_attempts": 1,
+      "retry_sleep": 1.0
+    }
+  }

@@ -1,0 +1,102 @@
+{
+  "symbol": "MBS",
+  "company_name": "Công ty Cổ phần Chứng khoán MB",
+  "period_label": "2026-Q2",
+  "final_action": "WATCHLIST",
+  "action": "WATCHLIST",
+  "confidence": 0.6,
+  "investment_horizon": "3M",
+  "thesis_summary": "MBS ghi nhận tăng trưởng doanh thu 17.4% trong Q2/2026 nhờ mảng tự doanh và cho vay margin, tuy nhiên mảng môi giới suy giảm đáng kể (-32.2%). Định giá P/E và P/B đang ở mức hợp lý so với trung bình ngành, nhưng cần quan sát thêm sự phục hồi của thanh khoản thị trường để củng cố doanh thu môi giới.",
+  "key_drivers": [
+    "Tăng trưởng doanh thu từ hoạt động tự doanh và cho vay margin",
+    "Cải thiện hiệu quả hoạt động so với kỳ trước",
+    "Định giá P/E, P/B hấp dẫn hơn so với mặt bằng chung"
+  ],
+  "financial_statement_readthrough": {
+    "period": "2026-Q2",
+    "positive_points": [
+      "Doanh thu hoạt động tăng 17.4% so với kỳ trước",
+      "Lãi từ các tài sản tài chính FVTPL tăng mạnh 123.1%",
+      "EPS tăng nhẹ 2.2%"
+    ],
+    "negative_points": [
+      "Doanh thu môi giới giảm 32.2%",
+      "Chi phí hoạt động tăng 40.7%",
+      "Tiền gửi của khách hàng giảm 36%"
+    ],
+    "red_flags": [
+      "Không có red flag trọng yếu"
+    ],
+    "quality_of_earnings": "Chất lượng lợi nhuận phụ thuộc nhiều vào biến động thị trường (tự doanh), cần theo dõi tính bền vững.",
+    "balance_sheet_risk": "Bảng cân đối kế toán mở rộng 11.4%, rủi ro nằm ở danh mục tài sản tài chính.",
+    "cash_flow_quality": "Dòng tiền cần theo dõi thêm do sự sụt giảm tiền gửi khách hàng."
+  },
+  "technical_readthrough": {
+    "setup": "unclear",
+    "trend_state": "Đang trong giai đoạn tích lũy, cần xác nhận xu hướng từ dòng tiền thị trường.",
+    "flow_confirmation": "Chưa có tín hiệu bứt phá rõ ràng.",
+    "invalidations": [
+      "Thủng vùng hỗ trợ gần nhất",
+      "Thanh khoản thị trường chung sụt giảm mạnh"
+    ]
+  },
+  "news_readthrough": {
+    "material_news": [
+      "Công bố BCTC Q2/2026"
+    ],
+    "risk_news": [],
+    "catalyst_news": [
+      "Kỳ vọng thanh khoản thị trường chứng khoán cải thiện trong nửa cuối năm"
+    ]
+  },
+  "insights_readthrough": {
+    "important_points": [
+      "Cần theo dõi sự phục hồi của mảng môi giới trong các quý tới"
+    ],
+    "uncertainties": [
+      "Biến động thị trường tài chính ảnh hưởng trực tiếp đến mảng tự doanh"
+    ]
+  },
+  "buy_plan": {
+    "strategy": "wait",
+    "entry_zone_low": null,
+    "entry_zone_high": null,
+    "stop_loss": null,
+    "target_3m": null,
+    "target_1y": null,
+    "suggested_quantity": 0,
+    "suggested_position_value": 0.0,
+    "risk_notes": "Chờ đợi tín hiệu bứt phá từ nền giá hiện tại hoặc sự cải thiện của thanh khoản thị trường chung trước khi giải ngân."
+  },
+  "sell_or_reduce_rules": [
+    "Vi phạm ngưỡng cắt lỗ 7-8% từ giá vốn",
+    "Thanh khoản thị trường chung suy giảm liên tục trong 2 tuần"
+  ],
+  "what_to_monitor_next_10_days": [
+    "Diễn biến giá cổ phiếu tại vùng hỗ trợ/kháng cự gần nhất",
+    "Thông tin về thanh khoản thị trường chung",
+    "Các báo cáo phân tích ngành chứng khoán"
+  ],
+  "data_gaps": [
+    "Thiếu dữ liệu chi tiết về danh mục tự doanh",
+    "Thiếu thông tin chi tiết về dòng tiền từ hoạt động tài chính"
+  ],
+  "llm_status": "success",
+  "paths": {
+    "heuristic_outputs": "outputs/trade_pipeline_integrate_llm",
+    "financial_markdown_path": "data/financial_statements/quarter_2/MBS_Công_ty_Cổ_phần_Chứng_khoán_MB_2026_Q2_structured_financial_report.md",
+    "financial_cache_path": "data/financial_statements",
+    "news_path": "data/news_cache/symbols/MBS_news_20260717.csv",
+    "prompt_path": "outputs/deep_symbol_llm/prompts/MBS_deep_prompt_20260717_090051.md"
+  },
+  "metadata": {
+    "generated_at": "2026-07-17T09:28:08.487265",
+    "financial_period": "2026-Q2",
+    "financial_used_cache": true,
+    "news_rows": 80,
+    "news_used_cache": false,
+    "llm_meta": {
+      "status": "success"
+    }
+  }
+}

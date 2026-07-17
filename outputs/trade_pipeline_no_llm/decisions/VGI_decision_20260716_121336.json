@@ -1,0 +1,35 @@
+{
+  "action": "HOLD_MONITOR",
+  "confidence": 0.5971160000000001,
+  "horizon": "3M",
+  "entry_price_low": 81477.0,
+  "entry_price_high": 83123.0,
+  "stop_loss": 80654.0,
+  "base_target": 94970.77199999998,
+  "bull_target": 100669.01831999999,
+  "bear_target": 77504.84037446318,
+  "suggested_quantity": 1822,
+  "suggested_position_value": 149950600.0,
+  "buy_strategy": "wait",
+  "sell_or_reduce_rules": [
+    "Close below stop_loss",
+    "Composite score drops below 55",
+    "Severe negative news or BCTC red flag"
+  ],
+  "reason": "Heuristic decision from composite=59.7, R/R=7.70, expected_return=13.26%, setup=NO_CLEAR_SETUP.",
+  "key_risks": [
+    "Market regime reversal",
+    "Liquidity and gap risk",
+    "Fundamental/news risk"
+  ],
+  "monitoring_triggers": [
+    "Breakout confirmation",
+    "Foreign/proprietary flow reversal",
+    "New BCTC or severe news"
+  ],
+  "decision_engine": "heuristic",
+  "decision_source": "heuristic",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "HOLD_MONITOR",
+  "decision_agreement": true
+}

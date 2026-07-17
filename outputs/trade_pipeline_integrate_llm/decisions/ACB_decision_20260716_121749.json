@@ -1,0 +1,36 @@
+{
+  "action": "BUY_CANDIDATE",
+  "confidence": 0.72,
+  "horizon": "3M",
+  "entry_price_low": 23512.5,
+  "entry_price_high": 23987.5,
+  "stop_loss": 22831.5,
+  "base_target": 28132.25,
+  "bull_target": 29820.18,
+  "bear_target": 22729.44,
+  "suggested_quantity": 6315,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "breakout",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 22831.5",
+    "Take partial profit at 28132.25",
+    "Reduce position if RSI exceeds 80 indicating overbought conditions"
+  ],
+  "reason": "ACB đang trong xu hướng tăng mạnh (Trend score 100) với tín hiệu BREAKOUT_55D và khối lượng giao dịch đột biến. Định giá P/E 7.09 hấp dẫn so với chất lượng tài sản, tỷ lệ Risk/Reward 4.77 rất tốt.",
+  "key_risks": [
+    "Dòng tiền từ khối ngoại và tự doanh đang bán ròng gây áp lực ngắn hạn",
+    "Chênh lệch cung cầu (Order-book imbalance) âm cho thấy áp lực bán tiềm ẩn",
+    "RSI đang tiến gần vùng quá mua (68.6)"
+  ],
+  "monitoring_triggers": [
+    "Theo dõi biến động dòng tiền tự doanh",
+    "Giám sát khối lượng giao dịch duy trì trên mức trung bình 20 phiên",
+    "Kiểm tra hỗ trợ tại vùng 23500"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "BUY_CANDIDATE",
+  "decision_agreement": false
+}

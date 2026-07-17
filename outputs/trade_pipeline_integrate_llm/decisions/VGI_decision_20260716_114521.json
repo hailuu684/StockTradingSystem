@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.55,
+  "horizon": "3M",
+  "entry_price_low": 80883.0,
+  "entry_price_high": 82517.0,
+  "stop_loss": 80066.0,
+  "base_target": 94970.77,
+  "bull_target": 100669.02,
+  "bear_target": 76875.92,
+  "suggested_quantity": 1835,
+  "suggested_position_value": 149924500.0,
+  "buy_strategy": "staged_accumulation",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 80066.0",
+    "Reduce position if RSI14 exceeds 70",
+    "Take partial profit at 94970.0"
+  ],
+  "reason": "VGI đang ở vùng quá bán (RSI 28.25) với tỷ lệ rủi ro/lợi nhuận hấp dẫn (8.12), tuy nhiên dòng tiền từ khối ngoại và tự doanh đang rút mạnh, cần theo dõi thêm sự ổn định của giá tại vùng hỗ trợ.",
+  "key_risks": [
+    "Áp lực bán mạnh từ khối tự doanh",
+    "Xu hướng ngắn hạn đang tiêu cực (MACD âm)",
+    "Thanh khoản có thể biến động mạnh"
+  ],
+  "monitoring_triggers": [
+    "Sự đảo chiều của MACD histogram",
+    "Dòng tiền khối ngoại quay lại mua ròng",
+    "Giá giữ vững trên mức 80000"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-17T09:55:42.818341",
+  "symbols": [
+    "HDB"
+  ],
+  "outputs": "outputs/deep_symbol_llm",
+  "financial_cache_path": "data/financial_statements",
+  "news_cache_path": "data/news_cache",
+  "results_path": "results/deep_symbol_llm_report_20260717_094321.txt",
+  "dry_run": false,
+  "results": [
+    {
+      "symbol": "HDB",
+      "company_name": "Ngân hàng Thương mại Cổ phần Phát Triển Thành phố Hồ Chí Minh",
+      "action": "BUY_CANDIDATE",
+      "confidence": 0.78,
+      "llm_status": "success",
+      "heuristic_path": "outputs/trade_pipeline_integrate_llm/candidates_ranked_latest.csv",
+      "financial_markdown_path": "data/financial_statements/quarter_1/HDB_Ngân_hàng_Thương_mại_Cổ_phần_Phát_Triển_Thành_phố_Hồ_Chí_Minh_2026_Q1_structured_financial_report.md",
+      "news_path": "data/news_cache/symbols/HDB_news_20260717.csv",
+      "prompt_path": "outputs/deep_symbol_llm/prompts/HDB_deep_prompt_20260717_094321.md",
+      "json_path": "outputs/deep_symbol_llm/json/HDB_deep_decision_20260717_094321.json",
+      "markdown_path": "outputs/deep_symbol_llm/markdown/HDB_deep_analysis_20260717_094321.md",
+      "errors": []
+    }
+  ]
+}

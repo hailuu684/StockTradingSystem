@@ -1,0 +1,54 @@
+{
+  "FPT": [
+    {
+      "updated_at": "2026-07-17T13:25:46.677240Z",
+      "symbol": "FPT",
+      "company_name": "Công ty Cổ phần FPT",
+      "quarter": 1,
+      "year": 2026,
+      "period_label": "2026-Q1",
+      "markdown_path": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_structured_financial_report.md",
+      "audit_json_path": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_structured_financial_audit.json",
+      "used_cache": false,
+      "cache_policy": "generated_or_loaded_by_structured_layer_no_pdf"
+    }
+  ],
+  "MBS": [
+    {
+      "updated_at": "2026-07-17T13:48:01.084492Z",
+      "symbol": "MBS",
+      "company_name": "Công ty Cổ phần Chứng khoán MB",
+      "quarter": 2,
+      "year": 2026,
+      "period_label": "2026-Q2",
+      "markdown_path": "data/financial_statements/quarter_2/MBS_Công_ty_Cổ_phần_Chứng_khoán_MB_2026_Q2_structured_financial_report.md",
+      "audit_json_path": "data/financial_statements/quarter_2/MBS_Công_ty_Cổ_phần_Chứng_khoán_MB_2026_Q2_structured_financial_audit.json",
+      "used_cache": false,
+      "cache_policy": "generated_or_loaded_by_structured_layer_no_pdf"
+    }
+  ],
+  "TCB": [
+    {
+      "updated_at": "2026-07-17T09:01:57.375149",
+      "symbol": "TCB",
+      "period_label": "2026-Q1",
+      "quarter": 1,
+      "year": 2026,
+      "markdown_path": "data/financial_statements/quarter_1/TCB_Ngân_hàng_Thương_mại_Cổ_phần_Kỹ_thương_Việt_Nam_2026_Q1_structured_financial_report.md",
+      "audit_json_path": "data/financial_statements/quarter_1/TCB_Ngân_hàng_Thương_mại_Cổ_phần_Kỹ_thương_Việt_Nam_2026_Q1_structured_financial_audit.json",
+      "source_url": "https://static2.vietstock.vn/data/HOSE/2026/BCTC/VN/QUY 1/TCB_Baocaotaichinh_Q1_2026_Congtyme.pdf"
+    }
+  ],
+  "HDB": [
+    {
+      "updated_at": "2026-07-17T09:43:56.410645",
+      "symbol": "HDB",
+      "period_label": "2026-Q1",
+      "quarter": 1,
+      "year": 2026,
+      "markdown_path": "data/financial_statements/quarter_1/HDB_Ngân_hàng_Thương_mại_Cổ_phần_Phát_Triển_Thành_phố_Hồ_Chí_Minh_2026_Q1_structured_financial_report.md",
+      "audit_json_path": "data/financial_statements/quarter_1/HDB_Ngân_hàng_Thương_mại_Cổ_phần_Phát_Triển_Thành_phố_Hồ_Chí_Minh_2026_Q1_structured_financial_audit.json",
+      "source_url": "https://static2.vietstock.vn/data/HOSE/2026/BCTC/VN/QUY 1/HDB_Baocaotaichinh_Q1_2026_Hopnhat_1.pdf"
+    }
+  ]
+}

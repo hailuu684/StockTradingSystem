@@ -1,0 +1,36 @@
+{
+    "macro_config": {
+      "economy": {
+        "gdp": { "period": "quarter", "length": 4 },
+        "cpi": { "period": "month", "length": 12 },
+        "credit": { "period": "quarter", "length": 90 },
+        "state_budget": { "period": "quarter", "length": 4 },
+        "industry_prod": { "period": "month", "length": 3 },
+        "import_export": { "period": "month", "length": 90 },
+        "retail": { "period": "month", "length": 3 },
+        "fdi": { "period": "month", "length": 3 },
+        "money_supply": { "period": "month", "length": 90 },
+        "population_labor": { "period": "year", "length": 3 },
+        "total_investment": { "period": "quarter", "length": 4 }
+      },
+      "currency": {
+        "exchange_rate": { "period": "day", "length": 5 },
+        "interest_rate": {"length": 90}
+      },
+      "commodity": {
+        "gold_vn": { "market": "VN" },
+        "gold_global": { "market": "GLOBAL" },
+        "gas": { "market": "VN" },
+        "oil_crude": {},
+        "coke": {},
+        "steel": { "market": "VN" },
+        "iron_ore": {},
+        "fertilizer_ure": {},
+        "soybean": {},
+        "corn": {},
+        "sugar": {},
+        "pork": { "market": "VN" }
+      }
+    }
+  }
+  

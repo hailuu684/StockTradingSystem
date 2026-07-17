@@ -1,0 +1,72 @@
+============================================================================================
+VNSTOCK TRADE PIPELINE - INITIAL RUN REPORT
+============================================================================================
+Generated at       : 2026-07-16 12:15:56
+Universe symbols   : 33
+Analyzed symbols   : 30
+Ranked output      : outputs/trade_pipeline_no_llm/candidates_ranked_latest.csv
+Watchlist output   : outputs/trade_pipeline_no_llm/watchlist_latest.csv
+Agent mode         : heuristic
+Decision source    : llm
+
+ACTION SUMMARY
+- BUY_CANDIDATE   : 0
+- WATCHLIST       : 1
+- HOLD_MONITOR    : 17
+- REDUCE_OR_EXIT  : 0
+- IGNORE          : 12
+- UNKNOWN         : 0
+
+LLM VS HEURISTIC COMPARISON
+- Agreement count : 30/30
+- Agreement rate  : 100.00%
+
+BUY CANDIDATES
+- Không có symbol nào đáng để BUY.
+
+WATCHLIST
+symbol | sector | composite | score_3m | score_1y | entry | stop | base | bull | R/R | qty
+----------------------------------------------------------------------------------------------------------------------
+HDB    | bank       |    73.09 |    73.63 |    72.27 | 26878-27422 | 26130 | 35012 | 37329 | 7.71 | 5524
+
+HOLD / MONITOR
+symbol | sector | composite | score_3m | score_1y | entry | stop | base | bull | R/R | qty
+----------------------------------------------------------------------------------------------------------------------
+LPB    | bank       |    67.54 |    69.09 |    65.20 | 50985-52015 | 50470 | 34819 | 60516 | -16.20 | 2912
+KLB    | bank       |    67.51 |    66.42 |    69.14 | 12276-12524 | 12128 | 31316 | 33195 | 69.65 | 12096
+ACB    | bank       |    66.52 |    66.32 |    66.81 | 23512-23988 | 22831 | 28132 | 29820 | 4.77 | 6315
+STB    | bank       |    66.32 |    69.36 |    61.76 | 71082-72518 | 69496 | 28099 | 80708 | -18.96 | 2089
+ABB    | bank       |    66.15 |    66.69 |    65.33 | 17523-17877 | 16746 | 19572 | 20747 | 1.96 | 7861
+MSB    | bank       |    64.53 |    65.16 |    63.59 | 16187-16514 | 15750 | 16680 | 17850 | 0.55 | 9174
+FOX    | technology |    63.32 |    61.83 |    65.56 | 66033-67367 | 65366 | 77165 | 81795 | 7.85 | 2248
+SSB    | bank       |    62.75 |    62.79 |    62.68 | 15642-15958 | 15370 | 17764 | 18830 | 4.56 | 9493
+SHB    | bank       |    62.36 |    61.70 |    63.34 | 12573-12827 | 12446 | 24786 | 26273 | 47.58 | 11811
+NAB    | bank       |    62.32 |    63.00 |    61.30 | 12920-13180 | 12658 | 14223 | 15076 | 3.00 | 11494
+
+TOP 20 BY COMPOSITE SCORE
+symbol | final_action | h_action | llm_action | sector | composite | expected_return | R/R | reason
+------------------------------------------------------------------------------------------------------------------------------------
+HDB    | WATCHLIST    | WATCHLIST | WATCHLIST  | bank       |    73.09 |         27.62% |  7.71 | Heuristic decision from composite=73.1, R/R=7.71, expected_return=27.62%, setu
+LPB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    67.54 |        -10.72% | -16.20 | Heuristic decision from composite=67.5, R/R=-16.20, expected_return=-10.72%, s
+KLB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    67.51 |        129.57% | 69.65 | Heuristic decision from composite=67.5, R/R=69.65, expected_return=129.57%, se
+ACB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    66.52 |         17.21% |  4.77 | Heuristic decision from composite=66.5, R/R=4.77, expected_return=17.21%, setu
+STB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    66.32 |        -27.72% | -18.96 | Heuristic decision from composite=66.3, R/R=-18.96, expected_return=-27.72%, s
+ABB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    66.15 |         10.38% |  1.96 | Heuristic decision from composite=66.1, R/R=1.96, expected_return=10.38%, setu
+MSB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    64.53 |          2.09% |  0.55 | Heuristic decision from composite=64.5, R/R=0.55, expected_return=2.09%, setup
+FOX    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | technology |    63.32 |         14.27% |  7.85 | Heuristic decision from composite=63.3, R/R=7.85, expected_return=14.27%, setu
+SSB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    62.75 |         11.56% |  4.56 | Heuristic decision from composite=62.7, R/R=4.56, expected_return=11.56%, setu
+SHB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    62.36 |         78.90% | 47.58 | Heuristic decision from composite=62.4, R/R=47.58, expected_return=78.90%, set
+NAB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    62.32 |          8.26% |  3.00 | Heuristic decision from composite=62.3, R/R=3.00, expected_return=8.26%, setup
+MBB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    60.76 |         31.10% | 18.37 | Heuristic decision from composite=60.8, R/R=18.37, expected_return=31.10%, set
+FPT    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | technology |    60.44 |         13.02% |  7.48 | Heuristic decision from composite=60.4, R/R=7.48, expected_return=13.02%, setu
+BAB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    60.24 |         -0.81% | -4.26 | Heuristic decision from composite=60.2, R/R=-4.26, expected_return=-0.81%, set
+VGI    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | technology |    59.71 |         13.26% |  7.70 | Heuristic decision from composite=59.7, R/R=7.70, expected_return=13.26%, setu
+BVB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    58.75 |        -14.38% | -14.07 | Heuristic decision from composite=58.8, R/R=-14.07, expected_return=-14.38%, s
+CTR    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | technology |    58.37 |         12.65% |  7.48 | Heuristic decision from composite=58.4, R/R=7.48, expected_return=12.65%, setu
+TCB    | HOLD_MONITOR | HOLD_MONITOR | HOLD_MONITOR | bank       |    58.09 |          8.86% |  5.23 | Heuristic decision from composite=58.1, R/R=5.23, expected_return=8.86%, setup
+VPB    | IGNORE       | IGNORE   | IGNORE     | bank       |    57.59 |         10.36% |  6.05 | Heuristic decision from composite=57.6, R/R=6.05, expected_return=10.36%, setu
+BID    | IGNORE       | IGNORE   | IGNORE     | bank       |    57.07 |          8.45% |  5.09 | Heuristic decision from composite=57.1, R/R=5.09, expected_return=8.45%, setup
+
+Data collection warnings/errors_count total: 1
+
+Ghi chú: BUY_CANDIDATE/WATCHLIST là output sàng lọc xác suất, không phải khuyến nghị đảm bảo lợi nhuận.

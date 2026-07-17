@@ -1,0 +1,86 @@
+{
+    "growth_strategy": [
+      { "name": "exchange", "conditionOptions": [{"type": "value", "value": "hsx"}] },
+      { "name": "ttmRoe", "conditionOptions": [{"from": 15, "to": 100}] },
+      { "name": "npatmiGrowth", "extraName": "Yoy, Qm1", "conditionOptions": [{"from": 15, "to": 500}] },
+      { "name": "stockTrend", "conditionOptions": [{"type": "value", "value": "STRONG_UPTREND"}] },
+      { "name": "rs", "extraName": "3Month", "conditionOptions": [{"from": 80, "to": 100}] },
+      { "name": "adtv", "extraName": "30Days", "conditionOptions": [{"from": 10000000000, "to": 1000000000000}] }
+    ],
+    "value_strategy": [
+      { "name": "exchange", "conditionOptions": [{"type": "value", "value": "hsx"}] },
+      { "name": "ttmPe", "conditionOptions": [{"from": 3, "to": 10}] },
+      { "name": "ttmPb", "conditionOptions": [{"from": 0.3, "to": 1.2}] },
+      { "name": "ttmRoe", "conditionOptions": [{"from": 12, "to": 100}] },
+      { "name": "adtv", "extraName": "30Days", "conditionOptions": [{"from": 5000000000, "to": 1000000000000}] }
+    ],
+    "breakout_strategy": [
+      { "name": "exchange", "conditionOptions": [{"type": "value", "value": "hsx"}] },
+      { "name": "esVolumeVsAvgVolume", "extraName": "30Days", "conditionOptions": [{"from": 30, "to": 300}] },
+      { "name": "dailyPriceChangePercent", "conditionOptions": [{"from": 2, "to": 7}] },
+      { "name": "rsi", "conditionOptions": [{"from": 50, "to": 68}] },
+      { "name": "adtv", "extraName": "30Days", "conditionOptions": [{"from": 5000000000, "to": 1000000000000}] }
+    ],
+    "GARP": [
+        {"name": "exchange", "conditionOptions": [{"type": "value", "value": "hsx"}]},
+        {"name": "ttmRoe", "conditionOptions": [{"from": 15, "to": 100}]},
+        {"name": "ttmPe", "conditionOptions": [{"from": 3, "to": 18}]},
+        {"name": "ttmPb", "conditionOptions": [{"from": 0.5, "to": 2.2}]},
+        {"name": "revenueGrowth", "extraName": "Yoy", "conditionOptions": [{"from": 5, "to": 100}]},
+        {"name": "ema20Ema50", "conditionOptions": [{"from": 0, "to": 10}]},
+        {"name": "adtv", "extraName": "30Days", "conditionOptions": [{"from": 5000000000, "to": 500000000000}]}
+    ],
+    "CANSLIM_William_O_Neil": [
+        {"name": "exchange", "conditionOptions": [{"type": "value", "value": "hsx"}]},
+        {"name": "ttmRoe", "conditionOptions": [{"from": 17, "to": 100}]},
+        {"name": "npatmiGrowth", "extraName": "Yoy, Qm1", "conditionOptions": [{"from": 20, "to": 500}]},
+        {"name": "revenueGrowth", "extraName": "Yoy", "conditionOptions": [{"from": 15, "to": 500}]},
+        {"name": "stockTrend", "conditionOptions": [{"type": "value", "value": "STRONG_UPTREND"}]},
+        {"name": "rs", "extraName": "3Month", "conditionOptions": [{"from": 80, "to": 100}]},
+        {"name": "adtv", "extraName": "30Days", "conditionOptions": [{"from": 15000000000, "to": 1000000000000}]}
+    ],
+    "SEPA_Mark_Minervini": [
+        {"name": "exchange", "conditionOptions": [{"type": "value", "value": "hsx"}]},
+        {"name": "npatmiGrowth", "extraName": "Yoy, Qm1", "conditionOptions": [{"from": 25, "to": 500}]},
+        {"name": "stockTrend", "conditionOptions": [{"type": "value", "value": "STRONG_UPTREND"}]},
+        {"name": "rs", "extraName": "3Month", "conditionOptions": [{"from": 85, "to": 100}]},
+        {"name": "ema20Ema50", "conditionOptions": [{"from": 1, "to": 15}]},
+        {"name": "ema50Ema200", "conditionOptions": [{"from": 1, "to": 25}]},
+        {"name": "rsi", "conditionOptions": [{"from": 50, "to": 68}]},
+        {"name": "adtv", "extraName": "30Days", "conditionOptions": [{"from": 10000000000, "to": 1000000000000}]}
+    ],
+    "Value_Investing_Benjamin_Graham": [
+        {"name": "exchange", "conditionOptions": [{"type": "value", "value": "hsx"}]},
+        {"name": "ttmPe", "conditionOptions": [{"from": 2, "to": 9}]},
+        {"name": "ttmPb", "conditionOptions": [{"from": 0.2, "to": 1.1}]},
+        {"name": "ttmRoe", "conditionOptions": [{"from": 12, "to": 100}]},
+        {"name": "netMargin", "conditionOptions": [{"from": 8, "to": 100}]},
+        {"name": "adtv", "extraName": "30Days", "conditionOptions": [{"from": 3000000000, "to": 500000000000}]}
+    ],
+    "Magic_Formula_Joel_Greenblatt": [
+        {"name": "exchange", "conditionOptions": [{"type": "value", "value": "hsx"}]},
+        {"name": "ttmRoe", "conditionOptions": [{"from": 20, "to": 100}]},
+        {"name": "ttmPe", "conditionOptions": [{"from": 3, "to": 12}]},
+        {"name": "netMargin", "conditionOptions": [{"from": 12, "to": 100}]},
+        {"name": "adtv", "extraName": "30Days", "conditionOptions": [{"from": 5000000000, "to": 1000000000000}]}
+    ],
+    "Turtle_Trading_Trend_Following": [
+        {"name": "exchange", "conditionOptions": [{"type": "value", "value": "hsx"}]},
+        {"name": "stockTrend", "conditionOptions": [{"type": "value", "value": "STRONG_UPTREND"}]},
+        {"name": "priceReturn", "extraName": "3Month", "conditionOptions": [{"from": 15, "to": 150}]},
+        {"name": "outperformsIndex", "extraName": "3Month", "conditionOptions": [{"from": 5, "to": 100}]},
+        {"name": "adx", "conditionOptions": [{"from": 25, "to": 100}]},
+        {"name": "rsi", "conditionOptions": [{"from": 55, "to": 72}]},
+        {"name": "adtv", "extraName": "30Days", "conditionOptions": [{"from": 10000000000, "to": 1000000000000}]}
+    ],
+    "High_Growth_Momentum_Nicolas_Darvas": [
+        {"name": "exchange", "conditionOptions": [{"type": "value", "value": "hsx"}]},
+        {"name": "revenueGrowth", "extraName": "Yoy", "conditionOptions": [{"from": 20, "to": 500}]},
+        {"name": "npatmiGrowth", "extraName": "Yoy, Qm1", "conditionOptions": [{"from": 30, "to": 500}]},
+        {"name": "stockTrend", "conditionOptions": [{"type": "value", "value": "STRONG_UPTREND"}]},
+        {"name": "dailyPriceChangePercent", "conditionOptions": [{"from": 1, "to": 7}]},
+        {"name": "esVolumeVsAvgVolume", "extraName": "30Days", "conditionOptions": [{"from": 30, "to": 500}]},
+        {"name": "adtv", "extraName": "30Days", "conditionOptions": [{"from": 8000000000, "to": 1000000000000}]}
+    ]
+  }
+  

@@ -1,0 +1,28 @@
+{
+    "insight_config": {
+      "ranking": {
+        "index": "VN30",
+        "limit": 10,
+        "date": "2026-05-15"
+      },
+      "screener": {
+        "lang": "en",
+        "limit": 20,
+        "strategy": "growth_strategy"
+          
+      },
+      "equity": {
+        "symbol": "TCB"
+      },
+      "flow": {
+        "enabled": true
+      },
+      "sector": {
+        "name": "bank"
+      },
+      "sentiment": {
+        "enabled": true
+      }
+    }
+  }
+  

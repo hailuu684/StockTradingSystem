@@ -1,0 +1,36 @@
+{
+  "action": "BUY_CANDIDATE",
+  "confidence": 0.65,
+  "horizon": "3M",
+  "entry_price_low": 12573.0,
+  "entry_price_high": 12827.0,
+  "stop_loss": 12446.0,
+  "base_target": 24786.22,
+  "bull_target": 26273.4,
+  "bear_target": 12172.76,
+  "suggested_quantity": 11811,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "staged_accumulation",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 12446.0",
+    "Take partial profit at 24786.0",
+    "Reduce if RSI14 exceeds 70"
+  ],
+  "reason": "SHB có định giá hấp dẫn (P/B 0.81, P/E 4.48) và RSI đang ở vùng quá bán (29.8), cho thấy tiềm năng hồi phục kỹ thuật. Dòng tiền ngoại 5 ngày gần đây bắt đầu quay lại tích cực.",
+  "key_risks": [
+    "Xu hướng trung hạn vẫn yếu (Trend score 50)",
+    "Áp lực bán ròng từ khối ngoại trong 20 ngày qua",
+    "Biến động thị trường chung có thể đẩy giá thủng hỗ trợ"
+  ],
+  "monitoring_triggers": [
+    "Theo dõi khối lượng giao dịch đột biến",
+    "Theo dõi diễn biến dòng tiền khối ngoại hàng ngày",
+    "Cập nhật chỉ báo MACD để xác nhận tín hiệu đảo chiều"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "BUY_CANDIDATE",
+  "decision_agreement": false
+}

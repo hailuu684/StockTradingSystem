@@ -1,0 +1,37 @@
+{
+  "action": "BUY_CANDIDATE",
+  "confidence": 0.68,
+  "horizon": "3M",
+  "entry_price_low": 12919.5,
+  "entry_price_high": 13180.5,
+  "stop_loss": 12658.5,
+  "base_target": 14222.96,
+  "bull_target": 15076.34,
+  "bear_target": 12089.52,
+  "suggested_quantity": 11494,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "pullback",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 12658.5",
+    "Take partial profit at 14222.96",
+    "Reduce if RSI exceeds 75",
+    "Exit if MACD histogram turns sharply negative"
+  ],
+  "reason": "NAB đang trong nhịp điều chỉnh về MA20 với định giá P/B hấp dẫn (0.9) và P/E thấp (4.6). Tỷ lệ Risk/Reward đạt 2.99 cho thấy tiềm năng tăng trưởng tốt trong trung hạn.",
+  "key_risks": [
+    "Thanh khoản thị trường chung suy giảm",
+    "Áp lực bán từ khối ngoại có thể gia tăng",
+    "Biến động ngành ngân hàng trong bối cảnh lãi suất"
+  ],
+  "monitoring_triggers": [
+    "Dòng tiền khối ngoại đảo chiều bán ròng mạnh",
+    "Vi phạm ngưỡng cắt lỗ 12658.5",
+    "Thay đổi đột ngột trong chỉ số P/B ngành"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "BUY_CANDIDATE",
+  "decision_agreement": false
+}

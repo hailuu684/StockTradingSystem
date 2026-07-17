@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.61,
+  "horizon": "3M",
+  "entry_price_low": 23908.5,
+  "entry_price_high": 24391.5,
+  "stop_loss": 23570.515,
+  "base_target": 32750.017533333335,
+  "bull_target": 34715.01858533334,
+  "bear_target": 23275.22635976301,
+  "suggested_quantity": 6211,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "staged_accumulation",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 23570.515",
+    "Reduce if RSI14 exceeds 70",
+    "Reduce if foreign net selling persists for 5 consecutive sessions"
+  ],
+  "reason": "MBB có định giá hấp dẫn (P/E 6.22) và ROE tốt, tuy nhiên xu hướng kỹ thuật hiện tại chưa rõ ràng và áp lực bán ròng từ khối ngoại vẫn còn đáng kể.",
+  "key_risks": [
+    "Áp lực bán ròng từ khối ngoại",
+    "Chỉ số MACD histogram âm cho thấy động lực tăng giá yếu",
+    "Mất cân bằng sổ lệnh (order-book imbalance) tiêu cực"
+  ],
+  "monitoring_triggers": [
+    "Sự cải thiện của dòng tiền khối ngoại",
+    "MACD histogram cắt lên trên đường 0",
+    "Khối lượng giao dịch vượt mức trung bình 20 phiên"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

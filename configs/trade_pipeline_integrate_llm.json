@@ -1,0 +1,305 @@
+{
+  "version": "2.1.0-integrate-llm",
+  "project_name": "vnstock_ms_style_integrate_llm_pipeline",
+  "paths": {
+    "repo_root": ".",
+    "output_dir": "./outputs/trade_pipeline_integrate_llm",
+    "news_config_path": "./configs/news.json",
+    "insights_strategy_path": "./configs/insights_filter_strategy.json",
+    "rag_markdown_path": "./configs/rag_context.md",
+    "user_option_insights_path": "./configs/user_insights.md"
+  },
+  "reports": {
+    "enabled": true,
+    "dir": "./results",
+    "file_path": "./results/reports_trade_pipeline_integrate_llm_{date}.txt",
+    "print_to_console": true,
+    "top_n": 20
+  },
+  "universe": {
+    "target_sectors": [
+      "bank",
+      "technology"
+    ],
+    "exchanges": [
+      "hsx",
+      "hnx",
+      "upcom"
+    ],
+    "limit_per_screener_call": 500,
+    "max_symbols_after_universe": 120,
+    "max_symbols_to_analyze": 30,
+    "min_price_vnd": 5000,
+    "min_adtv_vnd": 5000000000,
+    "allow_static_fallback": true,
+    "strict_sector_filter_after_screener": true,
+    "enable_sector_filter_in_screener": false,
+    "screener_strategies": [
+      "GARP",
+      "CANSLIM_William_O_Neil",
+      "SEPA_Mark_Minervini",
+      "breakout_strategy",
+      "growth_strategy",
+      "value_strategy"
+    ],
+    "sector_aliases": {
+      "bank": [
+        "bank",
+        "banks",
+        "banking",
+        "ngan hang",
+        "ngân hàng",
+        "nganhang",
+        "commercial bank",
+        "financial services",
+        "8350"
+      ],
+      "technology": [
+        "technology",
+        "information technology",
+        "software",
+        "it services",
+        "it",
+        "ict",
+        "telecommunication",
+        "telecom",
+        "digital",
+        "cloud",
+        "ai",
+        "cong nghe",
+        "công nghệ",
+        "9530",
+        "9570"
+      ]
+    },
+    "fallback_symbols_by_sector": {
+      "bank": [
+        "VCB",
+        "BID",
+        "CTG",
+        "TCB",
+        "VPB",
+        "MBB",
+        "ACB",
+        "STB",
+        "HDB",
+        "VIB",
+        "TPB",
+        "SHB",
+        "EIB",
+        "MSB",
+        "LPB",
+        "OCB",
+        "SSB",
+        "NAB",
+        "BAB",
+        "ABB",
+        "BVB",
+        "KLB"
+      ],
+      "technology": [
+        "FPT",
+        "CMG",
+        "ELC",
+        "ITD",
+        "ICT",
+        "SAM",
+        "VGI",
+        "FOX",
+        "CTR",
+        "MFS",
+        "YEG"
+      ]
+    }
+  },
+  "market": {
+    "index_symbol": "VNINDEX",
+    "length": "1Y",
+    "interval": "1D",
+    "ohlcv_price_multiplier": 1000.0,
+    "use_bulk_quote": true,
+    "collect_intraday": false,
+    "intraday_limit": 500,
+    "snapshot_methods": [
+      "quote",
+      "summary",
+      "order_book",
+      "price_board",
+      "session_stats",
+      "trading_stats"
+    ],
+    "historical_methods": [
+      "ohlcv",
+      "history",
+      "trade_history",
+      "foreign_flow",
+      "proprietary_flow",
+      "volume_profile"
+    ]
+  },
+  "insights": {
+    "enabled": true,
+    "ranking": {
+      "index": "VNINDEX",
+      "limit": 10,
+      "date": null
+    },
+    "screener": {
+      "criteria_lang": "en"
+    },
+    "flow": {
+      "enabled": true
+    },
+    "sentiment": {
+      "enabled": true
+    },
+    "collect_unsupported_equity_sector_domains": false
+  },
+  "fundamental": {
+    "enabled": true,
+    "max_symbols_for_deep_fundamental": 20,
+    "periods": {
+      "income_statement": "year",
+      "balance_sheet": "quarter",
+      "cash_flow": "year",
+      "ratio": "quarter",
+      "note": "year"
+    },
+    "note_lang": "vi",
+    "financial_health": {
+      "scorecard": "auto",
+      "limit": 4
+    },
+    "llm_note_analysis": false
+  },
+  "analytics": {
+    "enabled": true,
+    "index_symbol": "VNINDEX",
+    "pe_duration": "1Y",
+    "pb_duration": "3Y",
+    "evaluation_duration": "5Y"
+  },
+  "technical_strategy": {
+    "rsi_period": 14,
+    "atr_period": 14,
+    "ma_short": 20,
+    "ma_mid": 50,
+    "ma_long": 200,
+    "breakout_windows": [
+      20,
+      55
+    ],
+    "volume_window": 20,
+    "min_volume_ratio_breakout": 1.5,
+    "max_rsi_for_new_entry": 78
+  },
+  "ms_style_scenario": {
+    "horizons": {
+      "3M": 63,
+      "1Y": 252
+    },
+    "min_expected_return_3m": 0.1,
+    "min_expected_return_1y": 0.18,
+    "min_risk_reward": 2.0,
+    "max_bear_probability": 0.4,
+    "bank_target_pb_floor": 0.8,
+    "bank_target_pb_cap": 2.4,
+    "tech_target_pe_floor": 10.0,
+    "tech_target_pe_cap": 35.0
+  },
+  "risk": {
+    "portfolio_value_vnd": 1000000000,
+    "risk_per_trade_pct": 0.0075,
+    "max_position_pct": 0.15,
+    "max_sector_pct": 0.3,
+    "max_open_positions": 10,
+    "atr_stop_multiplier": 1.8,
+    "swing_low_window": 20,
+    "entry_buffer_pct": 0.01,
+    "min_liquidity_participation_pct": 0.05
+  },
+  "agent": {
+    "enabled": true,
+    "provider": "project_gemini",
+    "mode": "compare",
+    "llm_mode": "compare",
+    "decision_source": "llm",
+    "api_key_env": "AIzaSyC9mRECNTyI6o9dPZW5wYNlgzm7UVVpwR8",
+    "api_key": "AIzaSyC9mRECNTyI6o9dPZW5wYNlgzm7UVVpwR8",
+    "endpoint_url": null,
+    "model": "gemini-3.1-flash-lite",
+    "temperature": 0.2,
+    "max_output_tokens": 4096,
+    "timeout": 60,
+    "save_prompt": true,
+    "require_json": true,
+    "fallback_to_heuristic_on_error": true
+  },
+  "llm_config": {
+    "provider": "gemini",
+    "api_key_env": "AIzaSyC9mRECNTyI6o9dPZW5wYNlgzm7UVVpwR8",
+    "api_key": "AIzaSyC9mRECNTyI6o9dPZW5wYNlgzm7UVVpwR8",
+    "llm_model": "gemini-3.1-flash-lite",
+    "temperature": 0.2,
+    "max_output_tokens": 4096,
+    "require_json": true
+  },
+  "daily_news": {
+    "enabled": true,
+    "watchlist_path": "./outputs/trade_pipeline_integrate_llm/watchlist_latest.csv",
+    "lookback_days": 3,
+    "max_articles_per_symbol": 20,
+    "company_aliases": {
+      "TCB": [
+        "Techcombank",
+        "Ngân hàng Kỹ thương",
+        "Kỹ thương Việt Nam"
+      ],
+      "FPT": [
+        "FPT",
+        "FPT Corporation",
+        "Công ty FPT"
+      ]
+    },
+    "severe_risk_keywords": [
+      "điều tra",
+      "thanh tra",
+      "khởi tố",
+      "bắt",
+      "hủy niêm yết",
+      "kiểm soát",
+      "cảnh báo",
+      "trái phiếu",
+      "vỡ nợ",
+      "chậm trả",
+      "lỗ",
+      "suy giảm",
+      "phạt",
+      "fraud",
+      "lawsuit"
+    ],
+    "positive_keywords": [
+      "lãi kỷ lục",
+      "tăng trưởng",
+      "ký hợp đồng",
+      "cổ tức",
+      "chia thưởng",
+      "mua lại cổ phiếu",
+      "nâng hạng",
+      "dự án mới",
+      "lợi nhuận tăng",
+      "đơn hàng",
+      "ai",
+      "cloud",
+      "chuyển đổi số"
+    ]
+  },
+  "runtime": {
+    "log_level": "INFO",
+    "fail_fast": false,
+    "sleep_between_symbols": 0.2,
+    "save_raw_data": false,
+    "csv_encoding": "utf-8-sig",
+    "deduplicate_news_by_url": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.45,
+  "horizon": "3M",
+  "entry_price_low": 58806.0,
+  "entry_price_high": 59994.0,
+  "stop_loss": 58212.0,
+  "base_target": 38768.67,
+  "bull_target": 63739.28,
+  "bear_target": 32953.37,
+  "suggested_quantity": 2525,
+  "suggested_position_value": 149985000.0,
+  "buy_strategy": "wait",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 58212",
+    "Reduce if RSI14 drops below 30",
+    "Reduce if foreign net selling accelerates"
+  ],
+  "reason": "VCB đang trong xu hướng điều chỉnh với áp lực bán ròng mạnh từ khối ngoại và chỉ báo kỹ thuật chưa cho tín hiệu đảo chiều rõ ràng. Mặc dù định giá P/B ở mức 2.11 là hợp lý cho một ngân hàng chất lượng, nhưng rủi ro giảm giá ngắn hạn vẫn cao.",
+  "key_risks": [
+    "Áp lực bán ròng liên tục từ khối ngoại",
+    "Dòng tiền yếu (Volume ratio < 1)",
+    "Tâm lý thị trường tiêu cực đối với nhóm ngân hàng vốn hóa lớn"
+  ],
+  "monitoring_triggers": [
+    "Sự cải thiện của dòng tiền khối ngoại",
+    "MACD histogram cắt lên trên đường 0",
+    "Giá vượt lên trên vùng kháng cự 60000"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "IGNORE",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.45,
+  "horizon": "3M",
+  "entry_price_low": 13167.0,
+  "entry_price_high": 13433.0,
+  "stop_loss": 13034.0,
+  "base_target": 9558.4,
+  "bull_target": 15097.07,
+  "bear_target": 8124.64,
+  "suggested_quantity": 11278,
+  "suggested_position_value": 149997400.0,
+  "buy_strategy": "wait",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 13034.0",
+    "Reduce if RSI exceeds 70",
+    "Reduce if MACD histogram turns negative after a failed breakout"
+  ],
+  "reason": "BVB cho thấy tín hiệu kỹ thuật pullback nhưng rủi ro giảm giá kỳ vọng cao do định giá P/B thấp nhưng ROE yếu. Dòng tiền từ khối ngoại và tự doanh không đồng nhất, cần chờ xác nhận xu hướng rõ ràng hơn.",
+  "key_risks": [
+    "ROE thấp (6.12%) gây áp lực lên định giá dài hạn",
+    "Dòng tiền tự doanh bán ròng mạnh trong 20 phiên",
+    "Tỷ lệ rủi ro/lợi nhuận không hấp dẫn tại vùng giá hiện tại"
+  ],
+  "monitoring_triggers": [
+    "Sự cải thiện của dòng tiền khối ngoại",
+    "Sự phục hồi của chỉ số MACD histogram",
+    "Khối lượng giao dịch tăng đột biến vượt trung bình 20 phiên"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

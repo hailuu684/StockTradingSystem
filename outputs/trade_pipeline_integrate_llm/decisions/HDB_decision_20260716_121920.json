@@ -1,0 +1,37 @@
+{
+  "action": "BUY_CANDIDATE",
+  "confidence": 0.78,
+  "horizon": "3M",
+  "entry_price_low": 26878.5,
+  "entry_price_high": 27421.5,
+  "stop_loss": 26130.46,
+  "base_target": 35012.08,
+  "bull_target": 37329.04,
+  "bear_target": 26017.18,
+  "suggested_quantity": 5524,
+  "suggested_position_value": 149976100.0,
+  "buy_strategy": "pullback",
+  "sell_or_reduce_rules": [
+    "Close if price drops below 26130.46",
+    "Take partial profit at 35012.08",
+    "Reduce if RSI exceeds 80",
+    "Exit if foreign net flow turns consistently negative for 5 consecutive sessions"
+  ],
+  "reason": "HDB đang trong xu hướng tăng mạnh với điểm kỹ thuật cao, định giá P/E hấp dẫn (6.0) và dòng tiền khối ngoại hỗ trợ tốt. Vị thế pullback về MA20 cung cấp tỷ lệ rủi ro/lợi nhuận (7.71) rất tối ưu.",
+  "key_risks": [
+    "Biến động thị trường chung VN-Index",
+    "Áp lực bán từ khối tự doanh",
+    "Rủi ro thanh khoản nếu thị trường đảo chiều đột ngột"
+  ],
+  "monitoring_triggers": [
+    "Duy trì RSI trên 50",
+    "Theo dõi khối lượng giao dịch (Volume ratio 20D)",
+    "Giám sát dòng tiền khối ngoại hàng ngày"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "WATCHLIST",
+  "llm_action": "BUY_CANDIDATE",
+  "decision_agreement": false
+}

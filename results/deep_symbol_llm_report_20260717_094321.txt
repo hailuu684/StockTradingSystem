@@ -1,0 +1,27 @@
+DEEP SYMBOL LLM ANALYSIS REPORT
+================================================================================
+Generated at: 2026-07-17T09:55:42
+Symbols: HDB
+Financial cache path: data/financial_statements
+Outputs: outputs/deep_symbol_llm
+
+ACTION SUMMARY
+--------------------------------------------------------------------------------
+BUY_CANDIDATE     : 1
+WATCHLIST         : 0
+HOLD_MONITOR      : 0
+REDUCE_OR_EXIT    : 0
+IGNORE            : 0
+
+BUY CANDIDATES
+--------------------------------------------------------------------------------
+HDB      | Ngân hàng Thương mại Cổ phần Phát Tr | conf=0.78 | outputs/deep_symbol_llm/markdown/HDB_deep_analysis_20260717_094321.md
+
+WATCHLIST
+--------------------------------------------------------------------------------
+Không có symbol nào đáng để WATCH.
+
+ALL RESULTS
+--------------------------------------------------------------------------------
+symbol | action | confidence | llm_status | financial_markdown | news_cache | markdown
+HDB      | BUY_CANDIDATE      | 0.78 | success  | data/financial_statements/quarter_1/HDB_Ngân_hàng_Thương_mại_Cổ_phần_Phát_Triển_Thành_phố_Hồ_Chí_Minh_2026_Q1_structured_financial_report.md | data/news_cache/symbols/HDB_news_20260717.csv | outputs/deep_symbol_llm/markdown/HDB_deep_analysis_20260717_094321.md

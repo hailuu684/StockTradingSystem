@@ -1,0 +1,89 @@
+============================================================================================
+VNSTOCK TRADE PIPELINE - INITIAL RUN REPORT
+============================================================================================
+Generated at       : 2026-07-16 12:44:17
+Universe symbols   : 33
+Analyzed symbols   : 30
+Ranked output      : outputs/trade_pipeline_integrate_llm/candidates_ranked_latest.csv
+Watchlist output   : outputs/trade_pipeline_integrate_llm/watchlist_latest.csv
+Agent mode         : llm
+Decision source    : llm
+
+ACTION SUMMARY
+- BUY_CANDIDATE   : 10
+- WATCHLIST       : 18
+- HOLD_MONITOR    : 0
+- REDUCE_OR_EXIT  : 0
+- IGNORE          : 2
+- UNKNOWN         : 0
+
+LLM VS HEURISTIC COMPARISON
+- Agreement count : 2/30
+- Agreement rate  : 6.67%
+
+BUY CANDIDATES
+symbol | sector | composite | score_3m | score_1y | entry | stop | base | bull | R/R | qty
+----------------------------------------------------------------------------------------------------------------------
+HDB    | bank       |    73.09 |    73.63 |    72.27 | 26878-27422 | 26130 | 35012 | 37329 | 7.71 | 5524
+KLB    | bank       |    69.59 |    68.82 |    70.74 | 12424-12676 | 12076 | 31316 | 33195 | 39.63 | 11952
+ACB    | bank       |    66.52 |    66.32 |    66.81 | 23512-23988 | 22832 | 28132 | 29820 | 4.77 | 6315
+ABB    | bank       |    66.15 |    66.69 |    65.33 | 16830-17170 | 16083 | 19572 | 20747 | 2.81 | 8181
+SSB    | bank       |    64.83 |    65.19 |    64.28 | 15840-16160 | 15425 | 17764 | 18830 | 3.07 | 9375
+MSB    | bank       |    64.53 |    65.16 |    63.59 | 16186-16514 | 15750 | 16680 | 17850 | 0.55 | 9174
+FOX    | technology |    63.32 |    61.83 |    65.56 | 66330-67670 | 65660 | 77165 | 81795 | 7.59 | 2238
+SHB    | bank       |    62.36 |    61.70 |    63.34 | 12573-12827 | 12446 | 24786 | 26273 | 47.58 | 11811
+NAB    | bank       |    62.32 |    63.00 |    61.30 | 12920-13180 | 12658 | 14223 | 15076 | 3.00 | 11494
+VGI    | technology |    59.71 |    58.39 |    61.69 | 80883-82517 | 80066 | 94971 | 100669 | 8.12 | 1835
+
+WATCHLIST
+symbol | sector | composite | score_3m | score_1y | entry | stop | base | bull | R/R | qty
+----------------------------------------------------------------------------------------------------------------------
+LPB    | bank       |    67.54 |    69.09 |    65.20 | 51480-52520 | 50891 | 34819 | 60725 | -15.49 | 2884
+STB    | bank       |    66.32 |    69.36 |    61.76 | 71082-72518 | 69496 | 28099 | 80708 | -18.96 | 2089
+MBB    | bank       |    60.76 |    59.88 |    62.08 | 23908-24392 | 23571 | 32750 | 34715 | 14.84 | 6211
+FPT    | technology |    60.44 |    57.83 |    64.35 | 67320-68680 | 66640 | 76787 | 81394 | 6.46 | 2205
+BAB    | bank       |    60.24 |    60.95 |    59.18 | 11088-11312 | 10976 | 10155 | 13156 | -4.67 | 13392
+CTR    | technology |    60.19 |    57.91 |    63.62 | 69300-70700 | 68600 | 80468 | 85296 | 7.48 | 2142
+BVB    | bank       |    58.75 |    60.03 |    56.84 | 13167-13433 | 13034 | 9558 | 15097 | -14.07 | 11278
+TCB    | bank       |    58.09 |    57.14 |    59.50 | 31581-32219 | 31262 | 34797 | 36884 | 4.54 | 4702
+VPB    | bank       |    57.59 |    56.75 |    58.87 | 25740-26260 | 25480 | 29145 | 30894 | 6.05 | 5769
+BID    | bank       |    57.07 |    55.96 |    58.74 | 38907-39693 | 38514 | 43303 | 45901 | 5.09 | 3816
+OCB    | bank       |    56.18 |    55.17 |    57.70 | 10692-10908 | 10584 | 13411 | 14216 | 12.09 | 13888
+VCB    | bank       |    55.86 |    55.92 |    55.76 | 58806-59994 | 58212 | 38769 | 63739 | -17.37 | 2525
+VIB    | bank       |    55.81 |    54.42 |    57.89 | 15296-15604 | 15141 | 19743 | 20927 | 13.89 | 9708
+ELC    | technology |    54.54 |    54.78 |    54.18 | 15840-16160 | 15680 | 18628 | 19745 | 8.21 | 9375
+TPB    | bank       |    54.38 |    53.64 |    55.48 | 15246-15554 | 15092 | 16762 | 17767 | 4.42 | 9740
+CTG    | bank       |    53.44 |    50.99 |    57.12 | 31977-32623 | 31654 | 42677 | 45238 | 16.06 | 4643
+CMG    | technology |    52.32 |    51.42 |    53.68 | 25641-26159 | 25382 | 29794 | 31581 | 7.52 | 5791
+YEG    | technology |    47.64 |    48.21 |    46.77 | 7999-8161 | 7918 | 9380 | 9942 | 8.04 | 18564
+
+HOLD / MONITOR
+- Không có symbol nào cần HOLD/MONITOR.
+
+TOP 20 BY COMPOSITE SCORE
+symbol | final_action | h_action | llm_action | sector | composite | expected_return | R/R | reason
+------------------------------------------------------------------------------------------------------------------------------------
+HDB    | BUY_CANDIDATE | WATCHLIST | BUY_CANDIDATE | bank       |    73.09 |         27.62% |  7.71 | HDB đang trong xu hướng tăng mạnh với điểm kỹ thuật cao, định giá P/E hấp dẫn 
+KLB    | BUY_CANDIDATE | WATCHLIST | BUY_CANDIDATE | bank       |    69.59 |        128.66% | 39.63 | KLB có định giá P/E và P/B rất hấp dẫn cùng ROE cao. Kỹ thuật đang ở vùng pull
+LPB    | WATCHLIST    | HOLD_MONITOR | WATCHLIST  | bank       |    67.54 |        -11.39% | -15.49 | Mặc dù điểm số tổng hợp khá tốt (67.54) và xu hướng kỹ thuật mạnh, nhưng tỷ lệ
+ACB    | BUY_CANDIDATE | HOLD_MONITOR | BUY_CANDIDATE | bank       |    66.52 |         17.21% |  4.77 | ACB đang trong xu hướng tăng mạnh (Trend score 100) với tín hiệu BREAKOUT_55D 
+STB    | WATCHLIST    | HOLD_MONITOR | WATCHLIST  | bank       |    66.32 |        -27.72% | -18.96 | STB đang trong nhịp điều chỉnh về MA20 với dòng tiền ngoại và tự doanh ngắn hạ
+ABB    | BUY_CANDIDATE | HOLD_MONITOR | BUY_CANDIDATE | bank       |    66.15 |         14.19% |  2.81 | ABB cho thấy xu hướng tăng mạnh với định giá P/E hấp dẫn (4.74) và dòng tiền t
+SSB    | BUY_CANDIDATE | HOLD_MONITOR | BUY_CANDIDATE | bank       |    64.83 |         10.61% |  3.07 | SSB đang trong nhịp điều chỉnh về MA20 với điểm số kỹ thuật tốt (95.0) và định
+MSB    | BUY_CANDIDATE | HOLD_MONITOR | BUY_CANDIDATE | bank       |    64.53 |          2.09% |  0.55 | MSB đang trong nhịp điều chỉnh kỹ thuật về MA20 với định giá P/B hấp dẫn (1.16
+FOX    | BUY_CANDIDATE | HOLD_MONITOR | BUY_CANDIDATE | technology |    63.32 |         13.83% |  7.59 | FOX có định giá hấp dẫn (P/E 12.67, ROE 31.87) và chỉ số RSI quá bán (19.97) c
+SHB    | BUY_CANDIDATE | HOLD_MONITOR | BUY_CANDIDATE | bank       |    62.36 |         78.90% | 47.58 | SHB có định giá rất hấp dẫn (P/B 0.81, P/E 4.48) và dòng tiền ngoại bắt đầu qu
+NAB    | BUY_CANDIDATE | HOLD_MONITOR | BUY_CANDIDATE | bank       |    62.32 |          8.26% |  3.00 | NAB đang trong nhịp điều chỉnh về MA20 với định giá P/B hấp dẫn (0.9) và P/E t
+MBB    | WATCHLIST    | HOLD_MONITOR | WATCHLIST  | bank       |    60.76 |         30.15% | 14.84 | MBB có định giá hấp dẫn (P/E 6.22) và ROE tốt, tuy nhiên xu hướng kỹ thuật hiệ
+FPT    | WATCHLIST    | HOLD_MONITOR | WATCHLIST  | technology |    60.44 |         11.33% |  6.46 | FPT có nền tảng cơ bản tốt (ROE cao, định giá hấp dẫn) nhưng đang chịu áp lực 
+BAB    | WATCHLIST    | HOLD_MONITOR | WATCHLIST  | bank       |    60.24 |         -1.63% | -4.67 | BAB đang trong xu hướng tăng nhưng chỉ số kỹ thuật yếu (MACD âm, thanh khoản t
+CTR    | WATCHLIST    | HOLD_MONITOR | WATCHLIST  | technology |    60.19 |         12.99% |  7.48 | CTR có nền tảng cơ bản tốt (ROE 30.5%, định giá hấp dẫn) nhưng dòng tiền khối 
+VGI    | BUY_CANDIDATE | HOLD_MONITOR | BUY_CANDIDATE | technology |    59.71 |         13.92% |  8.12 | VGI đang ở vùng quá bán (RSI 28.25) với tỷ lệ rủi ro/lợi nhuận hấp dẫn (8.12).
+BVB    | WATCHLIST    | HOLD_MONITOR | WATCHLIST  | bank       |    58.75 |        -14.38% | -14.07 | BVB cho thấy tín hiệu kỹ thuật pullback nhưng rủi ro giảm giá kỳ vọng cao do đ
+TCB    | WATCHLIST    | HOLD_MONITOR | WATCHLIST  | bank       |    58.09 |          7.50% |  4.54 | TCB có định giá hấp dẫn (P/E 8.57) nhưng dòng tiền khối ngoại đang bán ròng mạ
+VPB    | WATCHLIST    | IGNORE   | WATCHLIST  | bank       |    57.59 |         10.36% |  6.05 | VPB có định giá hấp dẫn (P/B 1.1) nhưng đang chịu áp lực bán ròng mạnh từ khối
+BID    | WATCHLIST    | IGNORE   | WATCHLIST  | bank       |    57.07 |          8.45% |  5.09 | BID có định giá hấp dẫn (P/E 8.97) và chỉ số chất lượng tốt, tuy nhiên áp lực 
+
+Data collection warnings/errors_count total: 1
+
+Ghi chú: BUY_CANDIDATE/WATCHLIST là output sàng lọc xác suất, không phải khuyến nghị đảm bảo lợi nhuận.

@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-07-16T15:44:37.367171+00:00",
+  "mode": "initial",
+  "universe_path": "outputs/trade_pipeline_checked/universe_20260716_102135.csv",
+  "ranked_path": "outputs/trade_pipeline_checked/candidates_ranked_latest.csv",
+  "watchlist_path": "outputs/trade_pipeline_checked/watchlist_latest.csv",
+  "symbol_count": 30,
+  "markdown_dir": "outputs/trade_pipeline_checked/markdown",
+  "decision_dir": "outputs/trade_pipeline_checked/decisions",
+  "report_path": "reports/reports_20260716_104437.txt"
+}

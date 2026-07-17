@@ -1,0 +1,9 @@
+{
+    "market_config": {
+      "symbol": "TCB",
+      "symbol_compare": "MSN",
+      "index_symbol": "VNINDEX",
+      "length": 30
+    }
+  }
+  

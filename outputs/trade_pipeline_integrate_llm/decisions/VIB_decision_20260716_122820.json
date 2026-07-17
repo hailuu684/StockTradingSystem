@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.55,
+  "horizon": "3M",
+  "entry_price_low": 15295.5,
+  "entry_price_high": 15604.5,
+  "stop_loss": 15141.0,
+  "base_target": 19742.78,
+  "bull_target": 20927.34,
+  "bear_target": 14757.74,
+  "suggested_quantity": 9708,
+  "suggested_position_value": 149987460.0,
+  "buy_strategy": "staged_accumulation",
+  "sell_or_reduce_rules": [
+    "Close if price drops below 15141.0",
+    "Reduce position if RSI14 crosses above 70",
+    "Exit if foreign net selling persists for 10 consecutive sessions"
+  ],
+  "reason": "VIB có định giá hấp dẫn (P/B 1.07) và tỷ lệ rủi ro/lợi nhuận tốt, nhưng xu hướng kỹ thuật hiện tại chưa rõ ràng và áp lực bán ròng từ khối ngoại vẫn còn lớn.",
+  "key_risks": [
+    "Áp lực bán ròng liên tục từ khối ngoại",
+    "Đà giảm giá trong 60 ngày qua",
+    "Thanh khoản thấp (Volume ratio 20D < 1)"
+  ],
+  "monitoring_triggers": [
+    "Sự cải thiện của dòng tiền khối ngoại",
+    "MACD histogram chuyển sang dương",
+    "Giá vượt lên trên vùng kháng cự ngắn hạn"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "IGNORE",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

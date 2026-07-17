@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.55,
+  "horizon": "3M",
+  "entry_price_low": 38907.0,
+  "entry_price_high": 39693.0,
+  "stop_loss": 38514.0,
+  "base_target": 43302.7,
+  "bull_target": 45900.87,
+  "bear_target": 36807.3,
+  "suggested_quantity": 3816,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "staged_accumulation",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 38514.0",
+    "Take profit at base target 43302.7",
+    "Reduce position if RSI14 fails to recover above 40"
+  ],
+  "reason": "BID có định giá hấp dẫn (P/E 8.97) và chỉ số chất lượng tốt, tuy nhiên áp lực bán ròng từ khối ngoại vẫn còn lớn và xu hướng kỹ thuật chưa rõ ràng.",
+  "key_risks": [
+    "Áp lực bán ròng liên tục từ khối ngoại",
+    "Xu hướng kỹ thuật yếu với MACD âm",
+    "Rủi ro thị trường chung ảnh hưởng đến nhóm ngân hàng"
+  ],
+  "monitoring_triggers": [
+    "Khối ngoại dừng bán ròng hoặc chuyển sang mua ròng",
+    "RSI14 vượt lên trên ngưỡng 40",
+    "Giá duy trì ổn định trên vùng hỗ trợ 38900"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "IGNORE",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

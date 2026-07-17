@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.45,
+  "horizon": "3M",
+  "entry_price_low": 31977.0,
+  "entry_price_high": 32623.0,
+  "stop_loss": 31654.0,
+  "base_target": 42676.92,
+  "bull_target": 45237.53,
+  "bear_target": 31087.37,
+  "suggested_quantity": 4643,
+  "suggested_position_value": 149964000.0,
+  "buy_strategy": "wait",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 31654",
+    "Reduce if RSI14 fails to recover above 40",
+    "Exit if foreign net selling persists for 5 consecutive sessions"
+  ],
+  "reason": "CTG có định giá hấp dẫn (P/E 4.96) nhưng dòng tiền đang rất tiêu cực với áp lực bán ròng mạnh từ khối ngoại và tự doanh. Cần chờ tín hiệu cân bằng cung cầu trước khi giải ngân.",
+  "key_risks": [
+    "Áp lực bán ròng liên tục từ khối ngoại",
+    "Xu hướng ngắn hạn đang suy yếu (RSI thấp)",
+    "Mất cân bằng sổ lệnh tiêu cực"
+  ],
+  "monitoring_triggers": [
+    "Cải thiện chỉ số dòng tiền (Flow score > 40)",
+    "Dừng bán ròng từ khối ngoại",
+    "Phục hồi kỹ thuật trên đường MA20"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "IGNORE",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

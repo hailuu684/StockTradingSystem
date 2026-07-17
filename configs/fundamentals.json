@@ -1,0 +1,17 @@
+{
+    "fundamental_config": {
+      "symbol": "TCB",
+      "periods": {
+        "income_statement": "year",
+        "balance_sheet": "quarter",
+        "cash_flow": "year",
+        "ratio": "quarter"
+      },
+      "note_config": {
+        "period": "yearly",
+        "language": "en"
+      },
+      "scorecard_mode": true
+    }
+  }
+  

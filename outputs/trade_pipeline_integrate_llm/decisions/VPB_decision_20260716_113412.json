@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.55,
+  "horizon": "3M",
+  "entry_price_low": 25740.0,
+  "entry_price_high": 26260.0,
+  "stop_loss": 25480.0,
+  "base_target": 29145.03,
+  "bull_target": 30893.73,
+  "bear_target": 24734.57,
+  "suggested_quantity": 5769,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "staged_accumulation",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 25480",
+    "Reduce position if RSI exceeds 70",
+    "Take profit at base target 29145"
+  ],
+  "reason": "VPB có định giá hấp dẫn (P/B 1.1) nhưng đang chịu áp lực bán ròng mạnh từ khối ngoại và dòng tiền ngắn hạn yếu. Cần theo dõi vùng hỗ trợ 25740-26260 trước khi giải ngân.",
+  "key_risks": [
+    "Áp lực bán ròng liên tục từ khối ngoại",
+    "Chỉ báo kỹ thuật MACD histogram âm cho thấy xu hướng ngắn hạn chưa tích cực",
+    "Mất cân bằng sổ lệnh (order-book imbalance) tiêu cực"
+  ],
+  "monitoring_triggers": [
+    "Sự đảo chiều của dòng tiền khối ngoại",
+    "Khối lượng giao dịch tăng đột biến vượt trung bình 20 phiên",
+    "Giá đóng cửa vượt lên trên đường trung bình động ngắn hạn"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "IGNORE",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

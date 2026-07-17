@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.65,
+  "horizon": "3M",
+  "entry_price_low": 69300.0,
+  "entry_price_high": 70700.0,
+  "stop_loss": 68600.0,
+  "base_target": 80467.8,
+  "bull_target": 85295.868,
+  "bear_target": 66389.0457445047,
+  "suggested_quantity": 2142,
+  "suggested_position_value": 149940000.0,
+  "buy_strategy": "pullback",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 68600",
+    "Take profit at base target 80467",
+    "Reduce position if RSI exceeds 70"
+  ],
+  "reason": "CTR có nền tảng cơ bản tốt (ROE 30.5%, định giá hấp dẫn) nhưng dòng tiền khối ngoại đang bán ròng mạnh và kỹ thuật đang ở trạng thái quá bán (RSI 30.11). Cần theo dõi thêm sự ổn định của dòng tiền trước khi giải ngân.",
+  "key_risks": [
+    "Áp lực bán ròng liên tục từ khối ngoại",
+    "Xu hướng ngắn hạn đang suy yếu (Trend score 57)",
+    "Mất cân bằng sổ lệnh tiêu cực (-0.71)"
+  ],
+  "monitoring_triggers": [
+    "Dòng tiền khối ngoại chuyển sang mua ròng",
+    "MACD histogram cắt lên trên 0",
+    "Giá vượt lên trên vùng 71000 với khối lượng tăng"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

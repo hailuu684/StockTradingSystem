@@ -1,0 +1,26 @@
+====================================================================================================
+DEEP SYMBOL LLM ANALYZER REPORT
+====================================================================================================
+Generated at: 2026-07-16 12:51:51
+Symbols analyzed: 2
+
+ACTION SUMMARY
+- BUY_CANDIDATE   : 0
+- WATCHLIST       : 2
+- HOLD_MONITOR    : 0
+- REDUCE_OR_EXIT  : 0
+- IGNORE          : 0
+
+Không có symbol nào đáng để BUY theo phân tích LLM sâu.
+
+WATCHLIST
+- TCB | Ngân hàng Thương mại Cổ phần Kỹ thương Việt Nam | confidence=0.55 | md=outputs/deep_symbol_llm/markdown/TCB_deep_analysis_20260716_125122.md
+- FPT | Công ty Cổ phần FPT | confidence=0.65 | md=outputs/deep_symbol_llm/markdown/FPT_deep_analysis_20260716_125151.md
+
+ALL RESULTS
+symbol | action | confidence | llm_status | financial | news | markdown
+--------------------------------------------------------------------------------------------------------------------------------------------
+TCB      | WATCHLIST        | 0.55 | dry_run  | /data/user/luutunghai@gmail.com/dataset/forex_data/stocks/financial_statements/quarter_3/TCB_Ngân_hàng_Thương_mại_Cổ_phần_Kỹ_thương_Việt_Nam_2026_Q3.md | /data/user/luutunghai@gmail.com/dataset/forex_data/stocks/news/symbols/TCB_news_20260716.csv | outputs/deep_symbol_llm/markdown/TCB_deep_analysis_20260716_125122.md
+  ! PDF download failed: HTTPError: 404 Client Error: Not Found for url: https://static2.vietstock.vn/data/HOSE/2026/NGHI
+FPT      | WATCHLIST        | 0.65 | dry_run  | /data/user/luutunghai@gmail.com/dataset/forex_data/stocks/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1.md | /data/user/luutunghai@gmail.com/dataset/forex_data/stocks/news/symbols/FPT_news_20260716.csv | outputs/deep_symbol_llm/markdown/FPT_deep_analysis_20260716_125151.md
+  ! PDF download failed: HTTPError: 404 Client Error: Not Found for url: https://static2.vietstock.vn/data/HOSE/2026/NGHI

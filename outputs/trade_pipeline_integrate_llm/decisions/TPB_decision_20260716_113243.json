@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.55,
+  "horizon": "3M",
+  "entry_price_low": 15246.0,
+  "entry_price_high": 15554.0,
+  "stop_loss": 15092.0,
+  "base_target": 16761.51,
+  "bull_target": 17767.2,
+  "bear_target": 14247.28,
+  "suggested_quantity": 9740,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "staged_accumulation",
+  "sell_or_reduce_rules": [
+    "Stop loss hit at 15092.0",
+    "Failure to hold support level after 3 days",
+    "RSI divergence or breakdown below 30"
+  ],
+  "reason": "TPB đang ở vùng định giá hấp dẫn (P/B 0.88) nhưng dòng tiền khối ngoại vẫn bán ròng mạnh, cần quan sát thêm để xác nhận vùng đáy kỹ thuật.",
+  "key_risks": [
+    "Áp lực bán ròng liên tục từ khối ngoại",
+    "Xu hướng ngắn hạn vẫn yếu (MACD âm)",
+    "Thanh khoản thị trường chung biến động"
+  ],
+  "monitoring_triggers": [
+    "Dừng bán ròng từ khối ngoại",
+    "MACD histogram cắt lên đường 0",
+    "Giá vượt lên trên đường trung bình 20 ngày"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "IGNORE",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

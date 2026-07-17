@@ -1,0 +1,30 @@
+{
+  "action": "IGNORE",
+  "confidence": 0.5232168,
+  "horizon": "3M",
+  "entry_price_low": 25641.0,
+  "entry_price_high": 26159.0,
+  "stop_loss": 25382.0,
+  "base_target": 29793.855,
+  "bull_target": 31581.4863,
+  "bear_target": 24790.491900317294,
+  "suggested_quantity": 5791,
+  "suggested_position_value": 149986900.0,
+  "buy_strategy": "wait",
+  "sell_or_reduce_rules": [
+    "Close below stop_loss",
+    "Composite score drops below 55",
+    "Severe negative news or BCTC red flag"
+  ],
+  "reason": "Heuristic decision from composite=52.3, R/R=7.52, expected_return=11.82%, setup=NO_CLEAR_SETUP.",
+  "key_risks": [
+    "Market regime reversal",
+    "Liquidity and gap risk",
+    "Fundamental/news risk"
+  ],
+  "monitoring_triggers": [
+    "Breakout confirmation",
+    "Foreign/proprietary flow reversal",
+    "New BCTC or severe news"
+  ]
+}

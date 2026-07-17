@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.55,
+  "horizon": "3M",
+  "entry_price_low": 10692.0,
+  "entry_price_high": 10908.0,
+  "stop_loss": 10584.0,
+  "base_target": 13411.33,
+  "bull_target": 14216.01,
+  "bear_target": 10225.28,
+  "suggested_quantity": 13888,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "pullback",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 10584.0",
+    "Reduce position if RSI exceeds 70",
+    "Reduce if foreign net selling accelerates for 3 consecutive days"
+  ],
+  "reason": "OCB có định giá hấp dẫn (P/B 0.82) và đang ở vùng hỗ trợ MA20, tuy nhiên dòng tiền từ khối ngoại và tự doanh đang tiêu cực, cần quan sát thêm sự cân bằng cung cầu.",
+  "key_risks": [
+    "Dòng tiền khối ngoại và tự doanh rút ròng mạnh",
+    "Chỉ số RSI chưa cho tín hiệu đảo chiều rõ rệt",
+    "Áp lực bán từ sổ lệnh (order-book imbalance âm)"
+  ],
+  "monitoring_triggers": [
+    "Sự cải thiện của dòng tiền khối ngoại",
+    "Khối lượng giao dịch (volume ratio) tăng trở lại trên mức trung bình",
+    "Phá vỡ ngưỡng kháng cự gần nhất"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "IGNORE",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

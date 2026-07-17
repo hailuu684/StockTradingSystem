@@ -1,0 +1,565 @@
+{
+  "version": "1.0.0",
+  "name": "vnstock_news_deep_symbol_config",
+  "description": "News config for deep symbol LLM analyzer. Uses BatchCrawler/sitemap for finance sites such as CafeF to avoid RSS feed errors.",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "run_profile": "ml",
+  "run_mode": "batch",
+  "target_sites": [
+    "cafef",
+    "vietstock",
+    "vneconomy",
+    "vnexpress"
+  ],
+  "profiles": {
+    "quick": {
+      "description": "Fast monitoring with RSS when available; automatically falls back to BatchCrawler+sitemap for sites without RSS such as CafeF.",
+      "recommended_for": "Dashboard, alerting, daily monitoring, fast sanity checks.",
+      "run_mode": "hybrid",
+      "crawler_key": "crawler",
+      "method_key": "get_articles_from_feed",
+      "allow_sitemap_fallback": true,
+      "save_output": true,
+      "output_dataset_name": "quick_news",
+      "sitemap_fallback_mode": "batch",
+      "notes": "RSS first for RSS-capable sites. For CafeF/sitemap-only sites, use BatchCrawler.fetch_articles with sitemap_url to get full article content and avoid No RSS URLs configured.",
+      "sitemap_fallback_method": "batch",
+      "crawler_overrides": {
+        "batch": {
+          "fetch_articles": {
+            "params": {
+              "sitemap_url": "$site.sitemap_urls",
+              "limit": 50,
+              "top_n_per_feed": null,
+              "within": null
+            }
+          }
+        }
+      },
+      "allow_batch_fallback": true,
+      "batch_fallback_limit": 50,
+      "fallback_order": [
+        "rss",
+        "batch_sitemap",
+        "crawler_sitemap_metadata"
+      ],
+      "rss_fallback_strategy": "batch_then_get_articles",
+      "prefer_batch_for_sitemap": true,
+      "allow_crawler_get_articles_last_resort": true
+    },
+    "ml": {
+      "description": "Deep symbol monitoring. Uses BatchCrawler.fetch_articles(); required for CafeF because CafeF has sitemap but no RSS in local config.",
+      "recommended_for": "Topic classification, event-study features, keyword models, sentiment labeling workflows.",
+      "run_mode": "batch",
+      "crawler_key": "batch",
+      "method_key": "fetch_articles",
+      "save_output": true,
+      "output_dataset_name": "ml_news_dataset"
+    },
+    "dl": {
+      "description": "Large text corpus for deep learning/embedding pipelines. Prefer EnhancedNewsCrawler when available; fallback to AsyncBatchCrawler or BatchCrawler according to source availability.",
+      "recommended_for": "Transformer fine-tuning, embedding corpora, RAG/news memory stores, long-horizon text datasets.",
+      "run_mode": "enhanced",
+      "crawler_key": "enhanced",
+      "method_key": "fetch_articles_async",
+      "fallback_strategy": "async_then_batch_when_sources_missing",
+      "save_output": true,
+      "output_dataset_name": "dl_news_corpus"
+    }
+  },
+  "site_registry": {
+    "vnexpress": {
+      "enabled": true,
+      "display_name": "VnExpress",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Use builtin vnstock_news site config by default. Add explicit rss_urls/sitemap_urls here if you want to force a source."
+    },
+    "cafef": {
+      "enabled": true,
+      "display_name": "CafeF",
+      "prefer_builtin_config": true,
+      "supports_rss": false,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [
+        "https://cafef.vn/latest-news-sitemap.xml"
+      ],
+      "custom_config": null,
+      "notes": "CafeF built-in config can raise No RSS URLs configured. Use BatchCrawler.fetch_articles(sitemap_url=https://cafef.vn/latest-news-sitemap.xml)."
+    },
+    "vneconomy": {
+      "enabled": true,
+      "display_name": "VnEconomy",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Use builtin vnstock_news site config by default; fill explicit sitemap_urls if using async/enhanced mode and your local config does not expose sources."
+    },
+    "vietstock": {
+      "enabled": true,
+      "display_name": "VietStock",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [
+        "https://vietstock.vn/sitemap.xml"
+      ],
+      "custom_config": null,
+      "notes": "Sitemap URL follows the documented ML dataset example."
+    },
+    "tuoitre": {
+      "enabled": false,
+      "display_name": "Tuoi Tre",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [
+        "https://tuoitre.vn/StaticSitemaps/sitemaps-2025-1.xml"
+      ],
+      "custom_config": null,
+      "notes": "Example monthly sitemap from docs. Change year/month for historical backfill."
+    },
+    "dantri": {
+      "enabled": false,
+      "display_name": "Dan Tri",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "thanhnien": {
+      "enabled": false,
+      "display_name": "Thanh Nien",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "znews": {
+      "enabled": false,
+      "display_name": "Znews",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "nhandan": {
+      "enabled": false,
+      "display_name": "Nhan Dan",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "tienphong": {
+      "enabled": false,
+      "display_name": "Tien Phong",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "vietnamnet": {
+      "enabled": false,
+      "display_name": "VietnamNet",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "baodautu": {
+      "enabled": false,
+      "display_name": "Bao Dau Tu",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "thoibaotaichinhvietnam": {
+      "enabled": false,
+      "display_name": "Thoi Bao Tai Chinh Viet Nam",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "nld": {
+      "enabled": false,
+      "display_name": "Nguoi Lao Dong",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "plo": {
+      "enabled": false,
+      "display_name": "Phap Luat TP.HCM",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "ktsg": {
+      "enabled": false,
+      "display_name": "Kinh Te Sai Gon",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "dddn": {
+      "enabled": false,
+      "display_name": "Dien Dan Doanh Nghiep",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "petrotimes": {
+      "enabled": false,
+      "display_name": "PetroTimes",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "cafebiz": {
+      "enabled": false,
+      "display_name": "CafeBiz",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "24h": {
+      "enabled": false,
+      "display_name": "24h",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    },
+    "nguoiquansat": {
+      "enabled": false,
+      "display_name": "Nguoi Quan Sat",
+      "prefer_builtin_config": true,
+      "supports_rss": true,
+      "supports_sitemap": true,
+      "rss_urls": [],
+      "sitemap_urls": [],
+      "custom_config": null,
+      "notes": "Available in builtin vnstock_news config according to docs."
+    }
+  },
+  "crawlers": {
+    "crawler": {
+      "class_name": "Crawler",
+      "description": "Unified simple crawler. Supports RSS and sitemap metadata fallback.",
+      "init": {
+        "site_name": "$site",
+        "custom_config": "$site.custom_config"
+      },
+      "methods": {
+        "get_articles_from_feed": {
+          "description": "RSS feed. Fastest path for latest news. Returns List[Dict].",
+          "params": {
+            "limit_per_feed": 10
+          },
+          "param_info": {
+            "limit_per_feed": "Maximum articles per RSS feed. Increase for broader monitoring; keep small for alerting."
+          }
+        },
+        "get_articles": {
+          "description": "Smart fallback from RSS to sitemap metadata. Sitemap fallback may return only url/lastmod, not full article content.",
+          "params": {
+            "sitemap_url": "$site.sitemap_urls",
+            "limit": 100,
+            "limit_per_feed": 10
+          },
+          "param_info": {
+            "sitemap_url": "Optional string/list of sitemap URLs. Leave null/empty to use builtin site config.",
+            "limit": "Maximum metadata/article entries.",
+            "limit_per_feed": "Maximum entries per RSS feed when RSS is used."
+          }
+        }
+      }
+    },
+    "batch": {
+      "class_name": "BatchCrawler",
+      "description": "Synchronous batch crawler. Stable and resume-friendly for ML datasets.",
+      "init": {
+        "site_name": "$site",
+        "request_delay": "$network.request_delay",
+        "output_path": "$runtime.temp_path",
+        "debug": false
+      },
+      "methods": {
+        "fetch_articles": {
+          "description": "Fetch parsed article details from sitemap/default site config. Returns DataFrame.",
+          "params": {
+            "sitemap_url": "$site.sitemap_urls",
+            "limit": 100,
+            "top_n_per_feed": null,
+            "within": null
+          },
+          "param_info": {
+            "sitemap_url": "Optional string/list. Use explicit sitemap when you need deterministic source selection.",
+            "limit": "Maximum detailed articles per site.",
+            "top_n_per_feed": "Optional cap per feed if the site has multiple feeds.",
+            "within": "Optional time-window filter if supported by local vnstock_news version."
+          }
+        },
+        "fetch_articles_batch": {
+          "description": "Fetch in small batches for memory-safe processing. Returns iterable/list of DataFrames depending on package version.",
+          "params": {
+            "batch_size": 50,
+            "max_workers": 2
+          },
+          "param_info": {
+            "batch_size": "Number of articles in each processing batch.",
+            "max_workers": "Thread workers for synchronous batch mode; keep low to avoid rate limit."
+          }
+        }
+      }
+    },
+    "async_batch": {
+      "class_name": "AsyncBatchCrawler",
+      "description": "Asynchronous crawler for fast multi-article collection. Requires sitemap/RSS sources.",
+      "init": {
+        "site_name": "$site",
+        "max_concurrency": "$network.max_concurrency"
+      },
+      "methods": {
+        "fetch_articles_async": {
+          "description": "Fetch parsed article details concurrently from source URLs. Returns DataFrame.",
+          "params": {
+            "sources": "$site.sitemap_urls",
+            "top_n": 500,
+            "top_n_per_feed": null,
+            "within": null
+          },
+          "param_info": {
+            "sources": "Required list of sitemap/RSS URLs for AsyncBatchCrawler.",
+            "top_n": "Maximum detailed articles per site.",
+            "top_n_per_feed": "Optional cap per source feed.",
+            "within": "Optional time-window filter if supported by local vnstock_news version."
+          }
+        },
+        "fetch_articles_concurrently": {
+          "description": "Fetch detailed content from a predefined list of article URLs.",
+          "params": {
+            "urls": [],
+            "max_concurrency": "$network.max_concurrency"
+          },
+          "param_info": {
+            "urls": "Explicit article URLs. Use when you already have a URL universe from another source.",
+            "max_concurrency": "Maximum concurrent article requests. Lower this if you see 403/429."
+          }
+        }
+      }
+    },
+    "enhanced": {
+      "class_name": "EnhancedNewsCrawler",
+      "description": "Advanced async API with caching, validation, cleaning and retry support where available.",
+      "init": {
+        "cache_enabled": true,
+        "cache_ttl": 3600,
+        "max_concurrency": "$network.max_concurrency",
+        "debug": false
+      },
+      "methods": {
+        "fetch_articles_async": {
+          "description": "Fetch articles with advanced caching/cleaning/validation. Signature may differ across package versions; get_news_layer filters kwargs safely.",
+          "params": {
+            "sources": "$site.sitemap_urls",
+            "site_name": "$site",
+            "top_n": 500,
+            "max_articles": 500,
+            "top_n_per_feed": null,
+            "within": null,
+            "time_frame": "7d",
+            "clean_content": true,
+            "sort_order": "desc",
+            "save_to_file": false
+          },
+          "param_info": {
+            "sources": "List of sitemap/RSS URLs. Required by most async/enhanced implementations.",
+            "site_name": "Site config key, e.g. cafef, vietstock.",
+            "top_n": "Maximum number of articles in signatures using top_n.",
+            "max_articles": "Maximum number of articles in signatures using max_articles.",
+            "top_n_per_feed": "Optional cap per feed.",
+            "within": "Optional time-window filter if supported.",
+            "time_frame": "Time window such as 24h, 7d, 30d, all where supported.",
+            "clean_content": "Whether to request crawler-side content cleaning where supported.",
+            "sort_order": "desc for newest-first where supported.",
+            "save_to_file": "Keep false; project-level output is handled by this script for consistency."
+          }
+        }
+      }
+    }
+  },
+  "network_settings": {
+    "request_delay": 1.5,
+    "max_concurrency": 3,
+    "retry_attempts": 2,
+    "retry_backoff_seconds": 3.0,
+    "timeout_seconds": 30,
+    "stop_on_http_status": [
+      403,
+      429
+    ],
+    "sleep_between_sites": true,
+    "user_agent_rotation": false,
+    "notes": "Use conservative defaults to avoid rate limiting. Increase delay/reduce concurrency if 403/429 appears.",
+    "non_retryable_source_errors": [
+      "No RSS URLs configured"
+    ]
+  },
+  "runtime": {
+    "temp_path": "./data/news_cache/_tmp",
+    "fail_fast": false,
+    "include_empty_sites": true,
+    "verbose": true,
+    "log_level": "INFO",
+    "rss_less_sites": [
+      "cafef"
+    ]
+  },
+  "preprocessing": {
+    "normalize_output": true,
+    "deduplicate": true,
+    "deduplicate_subset": [
+      "url"
+    ],
+    "clean_html": true,
+    "strip_whitespace": true,
+    "parse_publish_time": true,
+    "drop_rows_without_url": true,
+    "drop_rows_without_text_for_ml_dl": false,
+    "min_text_chars_for_ml": 0,
+    "min_text_chars_for_dl": 100,
+    "build_text_column": true,
+    "text_column_name": "text",
+    "text_parts": [
+      "title",
+      "short_description",
+      "content"
+    ],
+    "canonical_columns": [
+      "source",
+      "url",
+      "title",
+      "short_description",
+      "content",
+      "text",
+      "publish_time",
+      "author",
+      "category",
+      "tags",
+      "view_counts",
+      "image_url",
+      "crawl_time_utc"
+    ]
+  },
+  "filters": {
+    "enabled": false,
+    "keywords_any": [],
+    "keywords_all": [],
+    "symbols_any": [],
+    "start_date": null,
+    "end_date": null,
+    "case_sensitive": false,
+    "search_columns": [
+      "title",
+      "short_description",
+      "content",
+      "tags"
+    ]
+  },
+  "output": {
+    "enabled": true,
+    "my_path": "./data/news_cache/layer_outputs",
+    "filename_template": "deep_symbol_news_{profile}_{run_mode}_{timestamp}",
+    "formats": [
+      "csv"
+    ],
+    "csv_encoding": "utf-8-sig",
+    "json_force_ascii": false,
+    "save_manifest": true,
+    "partition_by_site": false,
+    "index": false,
+    "overwrite": true
+  },
+  "quality_checks": {
+    "required_columns": [
+      "source",
+      "url",
+      "title",
+      "publish_time"
+    ],
+    "warn_if_missing_required_columns": true,
+    "warn_if_empty": true,
+    "max_null_ratio_warning": 0.8
+  },
+  "legal_and_ethics": {
+    "respect_robots_txt": true,
+    "respect_terms_of_service": true,
+    "copyright_note": "Use crawled news for research/internal analytics unless you have explicit rights for redistribution/commercial publication.",
+    "rate_limit_note": "Stop or slow down when you encounter HTTP 403/429; do not bypass technical access controls."
+  }
+}

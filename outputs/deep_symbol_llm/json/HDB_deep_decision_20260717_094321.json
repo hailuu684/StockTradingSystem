@@ -1,0 +1,101 @@
+{
+  "symbol": "HDB",
+  "company_name": "Ngân hàng Thương mại Cổ phần Phát Triển Thành phố Hồ Chí Minh",
+  "period_label": "2026-Q1",
+  "final_action": "BUY_CANDIDATE",
+  "action": "BUY_CANDIDATE",
+  "confidence": 0.78,
+  "investment_horizon": "3M",
+  "thesis_summary": "HDB duy trì xu hướng tăng trưởng kỹ thuật mạnh mẽ với điểm số kỹ thuật tuyệt đối. Mặc dù lợi nhuận quý 1/2026 có sự sụt giảm nhẹ so với cùng kỳ, định giá P/E (5.79) vẫn ở mức hấp dẫn so với trung bình ngành. Chiến lược pullback về vùng hỗ trợ MA20 là điểm vào tối ưu với tỷ lệ R/R cao.",
+  "key_drivers": [
+    "Định giá P/E hấp dẫn (5.79) so với tiềm năng tăng trưởng",
+    "Xu hướng kỹ thuật mạnh mẽ, duy trì trên các đường trung bình động quan trọng",
+    "Dòng tiền khối ngoại hỗ trợ tích cực",
+    "Tỷ lệ R/R tối ưu (7.71) tại vùng giá hiện tại"
+  ],
+  "financial_statement_readthrough": {
+    "period": "2026-Q1",
+    "positive_points": [
+      "Tổng tài sản tăng trưởng 5.7% so với quý trước",
+      "Chi phí hoạt động giảm 32.3% giúp tối ưu hóa hiệu quả vận hành"
+    ],
+    "negative_points": [
+      "Thu nhập lãi thuần giảm 13% so với cùng kỳ",
+      "Lợi nhuận sau thuế của cổ đông ngân hàng mẹ giảm 6.7% so với cùng kỳ",
+      "Dòng tiền từ hoạt động kinh doanh âm nhẹ"
+    ],
+    "red_flags": [
+      "Không có red flag trọng yếu, sự sụt giảm lợi nhuận nằm trong bối cảnh chung của ngành ngân hàng quý 1"
+    ],
+    "quality_of_earnings": "Trung bình, lợi nhuận chịu áp lực từ chi phí lãi vay tăng nhanh hơn thu nhập lãi.",
+    "balance_sheet_risk": "Đòn bẩy tài chính cao (tổng nợ/tổng tài sản lớn) đặc thù của ngành ngân hàng, cần theo dõi chất lượng nợ xấu.",
+    "cash_flow_quality": "Dòng tiền hoạt động kinh doanh âm cần được theo dõi sát trong các quý tiếp theo."
+  },
+  "technical_readthrough": {
+    "setup": "pullback",
+    "trend_state": "Xu hướng tăng mạnh (uptrend) với điểm kỹ thuật 100/100",
+    "flow_confirmation": "Dòng tiền khối ngoại duy trì mua ròng tích cực trong 20 phiên gần nhất",
+    "invalidations": [
+      "Giá đóng cửa dưới 26130.46",
+      "Thủng đường MA50 với khối lượng lớn"
+    ]
+  },
+  "news_readthrough": {
+    "material_news": [],
+    "risk_news": [],
+    "catalyst_news": []
+  },
+  "insights_readthrough": {
+    "important_points": [
+      "HDB nằm trong danh sách ưu tiên mua của khối ngoại",
+      "Định giá P/B 1.53 phản ánh kỳ vọng tăng trưởng ổn định"
+    ],
+    "uncertainties": [
+      "Biến động thị trường chung VN-Index",
+      "Áp lực từ chi phí vốn trong môi trường lãi suất biến động"
+    ]
+  },
+  "buy_plan": {
+    "strategy": "pullback",
+    "entry_zone_low": 26878.5,
+    "entry_zone_high": 27421.5,
+    "stop_loss": 26130.46,
+    "target_3m": 35012.08,
+    "target_1y": 37329.04,
+    "suggested_quantity": 5524,
+    "suggested_position_value": 149976100.0,
+    "risk_notes": "Tuân thủ nghiêm ngặt stop-loss tại 26130.46 để bảo vệ vốn trước các biến động bất ngờ của thị trường."
+  },
+  "sell_or_reduce_rules": [
+    "Close if price drops below 26130.46",
+    "Take partial profit at 35012.08",
+    "Reduce if RSI exceeds 80",
+    "Exit if foreign net flow turns consistently negative for 5 consecutive sessions"
+  ],
+  "what_to_monitor_next_10_days": [
+    "Duy trì RSI trên 50",
+    "Theo dõi khối lượng giao dịch (Volume ratio 20D)",
+    "Giám sát dòng tiền khối ngoại hàng ngày"
+  ],
+  "data_gaps": [
+    "Thiếu thông tin chi tiết về nợ xấu (NPL) trong báo cáo quý 1/2026"
+  ],
+  "llm_status": "success",
+  "paths": {
+    "heuristic_outputs": "outputs/trade_pipeline_integrate_llm",
+    "financial_markdown_path": "data/financial_statements/quarter_1/HDB_Ngân_hàng_Thương_mại_Cổ_phần_Phát_Triển_Thành_phố_Hồ_Chí_Minh_2026_Q1_structured_financial_report.md",
+    "financial_cache_path": "data/financial_statements",
+    "news_path": "data/news_cache/symbols/HDB_news_20260717.csv",
+    "prompt_path": "outputs/deep_symbol_llm/prompts/HDB_deep_prompt_20260717_094321.md"
+  },
+  "metadata": {
+    "generated_at": "2026-07-17T09:55:42.815458",
+    "financial_period": "2026-Q1",
+    "financial_used_cache": false,
+    "news_rows": 80,
+    "news_used_cache": false,
+    "llm_meta": {
+      "status": "success"
+    }
+  }
+}

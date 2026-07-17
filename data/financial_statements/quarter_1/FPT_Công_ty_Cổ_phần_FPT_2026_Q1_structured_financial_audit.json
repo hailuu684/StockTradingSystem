@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-07-17T13:25:24.761275Z",
+  "used_cache": false,
+  "symbol": "FPT",
+  "company_name": "Công ty Cổ phần FPT",
+  "quarter": 1,
+  "year": 2026,
+  "period_label": "2026-Q1",
+  "quarter_dir": "data/financial_statements/quarter_1",
+  "markdown_path": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_structured_financial_report.md",
+  "audit_json_path": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_structured_financial_audit.json",
+  "raw_csv_paths": {
+    "filing": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_filing.csv",
+    "income_statement_quarter": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_income_statement_quarter.csv",
+    "balance_sheet_quarter": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_balance_sheet_quarter.csv",
+    "cash_flow_quarter": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_cash_flow_quarter.csv",
+    "ratio_quarter": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_ratio_quarter.csv",
+    "note": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_note.csv",
+    "financial_health": "data/financial_statements/quarter_1/FPT_Công_ty_Cổ_phần_FPT_2026_Q1_financial_health.csv"
+  },
+  "filing_row": {
+    "ticker": "FPT",
+    "doc_url": "https://static2.vietstock.vn/data/HOSE/2026/BCTC/VN/QUY 1/FPT_Baocaotaichinh_Q1_2026_Congtyme.pdf",
+    "doc_title": "BCTC Công ty mẹ quý 1 năm 2026 ",
+    "doc_name": "Báo cáo tài chính Công ty mẹ quý 1 năm 2026 "
+  },
+  "source_url": "https://static2.vietstock.vn/data/HOSE/2026/BCTC/VN/QUY 1/FPT_Baocaotaichinh_Q1_2026_Congtyme.pdf",
+  "pdf_path": null,
+  "download_pdf": false,
+  "errors": [],
+  "table_summaries": [
+    {
+      "name": "filing",
+      "raw_shape": [
+        221,
+        4
+      ],
+      "selected_shape": [
+        1,
+        4
+      ],
+      "latest_period": "2026-Q1",
+      "previous_period": "2025-Q4",
+      "metrics_count": 0,
+      "skipped_null_quarter_rows": 0,
+      "skipped_empty_columns_count": 0,
+      "data_quality_notes": [
+        "Không tìm thấy cột dạng period như 2026-Q2/Q2-2026.",
+        "Không có thông tin period rõ ràng; phân tích snapshot dòng đầu tiên."
+      ]
+    },
+    {
+      "name": "income_statement_quarter",
+      "raw_shape": [
+        57,
+        28
+      ],
+      "selected_shape": [
+        1,
+        28
+      ],
+      "latest_period": "2026-Q1",
+      "previous_period": "2025-Q4",
+      "metrics_count": 23,
+      "skipped_null_quarter_rows": 0,
+      "skipped_empty_columns_count": 4,
+      "data_quality_notes": []
+    },
+    {
+      "name": "balance_sheet_quarter",
+      "raw_shape": [
+        57,
+        156
+      ],
+      "selected_shape": [
+        1,
+        156
+      ],
+      "latest_period": "2026-Q1",
+      "previous_period": "2025-Q4",
+      "metrics_count": 75,
+      "skipped_null_quarter_rows": 0,
+      "skipped_empty_columns_count": 80,
+      "data_quality_notes": []
+    },
+    {
+      "name": "cash_flow_quarter",
+      "raw_shape": [
+        57,
+        55
+      ],
+      "selected_shape": [
+        1,
+        55
+      ],
+      "latest_period": "2026-Q1",
+      "previous_period": "2025-Q4",
+      "metrics_count": 34,
+      "skipped_null_quarter_rows": 0,
+      "skipped_empty_columns_count": 20,
+      "data_quality_notes": []
+    },
+    {
+      "name": "ratio_quarter",
+      "raw_shape": [
+        57,
+        10
+      ],
+      "selected_shape": [
+        1,
+        10
+      ],
+      "latest_period": "2026-Q1",
+      "previous_period": "2025-Q4",
+      "metrics_count": 9,
+      "skipped_null_quarter_rows": 0,
+      "skipped_empty_columns_count": 0,
+      "data_quality_notes": []
+    },
+    {
+      "name": "note",
+      "raw_shape": [
+        33,
+        2
+      ],
+      "selected_shape": [
+        1,
+        2
+      ],
+      "latest_period": "2026-Q1",
+      "previous_period": "2025-Q4",
+      "metrics_count": 1,
+      "skipped_null_quarter_rows": 0,
+      "skipped_empty_columns_count": 0,
+      "data_quality_notes": []
+    },
+    {
+      "name": "financial_health",
+      "raw_shape": [
+        4,
+        12
+      ],
+      "selected_shape": [
+        1,
+        12
+      ],
+      "latest_period": "2026-Q1",
+      "previous_period": "2025-Q4",
+      "metrics_count": 10,
+      "skipped_null_quarter_rows": 0,
+      "skipped_empty_columns_count": 0,
+      "data_quality_notes": []
+    }
+  ]
+}

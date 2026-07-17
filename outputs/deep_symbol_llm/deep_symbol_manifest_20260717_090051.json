@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-07-17T09:28:13.543663",
+  "symbols": [
+    "TCB",
+    "MBS"
+  ],
+  "outputs": "outputs/deep_symbol_llm",
+  "financial_cache_path": "data/financial_statements",
+  "news_cache_path": "data/news_cache",
+  "results_path": "results/deep_symbol_llm_report_20260717_090051.txt",
+  "dry_run": false,
+  "results": [
+    {
+      "symbol": "TCB",
+      "company_name": "Ngân hàng Thương mại Cổ phần Kỹ thương Việt Nam",
+      "action": "WATCHLIST",
+      "confidence": 0.55,
+      "llm_status": "success",
+      "heuristic_path": "outputs/trade_pipeline_integrate_llm/candidates_ranked_latest.csv",
+      "financial_markdown_path": "data/financial_statements/quarter_1/TCB_Ngân_hàng_Thương_mại_Cổ_phần_Kỹ_thương_Việt_Nam_2026_Q1_structured_financial_report.md",
+      "news_path": "data/news_cache/symbols/TCB_news_20260717.csv",
+      "prompt_path": "outputs/deep_symbol_llm/prompts/TCB_deep_prompt_20260717_090051.md",
+      "json_path": "outputs/deep_symbol_llm/json/TCB_deep_decision_20260717_090051.json",
+      "markdown_path": "outputs/deep_symbol_llm/markdown/TCB_deep_analysis_20260717_090051.md",
+      "errors": []
+    },
+    {
+      "symbol": "MBS",
+      "company_name": "Công ty Cổ phần Chứng khoán MB",
+      "action": "WATCHLIST",
+      "confidence": 0.6,
+      "llm_status": "success",
+      "heuristic_path": null,
+      "financial_markdown_path": "data/financial_statements/quarter_2/MBS_Công_ty_Cổ_phần_Chứng_khoán_MB_2026_Q2_structured_financial_report.md",
+      "news_path": "data/news_cache/symbols/MBS_news_20260717.csv",
+      "prompt_path": "outputs/deep_symbol_llm/prompts/MBS_deep_prompt_20260717_090051.md",
+      "json_path": "outputs/deep_symbol_llm/json/MBS_deep_decision_20260717_090051.json",
+      "markdown_path": "outputs/deep_symbol_llm/markdown/MBS_deep_analysis_20260717_090051.md",
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "action": "WATCHLIST",
+  "confidence": 0.55,
+  "horizon": "3M",
+  "entry_price_low": 11088.0,
+  "entry_price_high": 11312.0,
+  "stop_loss": 10976.0,
+  "base_target": 10154.54,
+  "bull_target": 13156.12,
+  "bear_target": 8631.36,
+  "suggested_quantity": 13392,
+  "suggested_position_value": 149990400.0,
+  "buy_strategy": "wait",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 10976.0",
+    "Reduce position if RSI14 exceeds 70",
+    "Reduce if MACD histogram continues to decline"
+  ],
+  "reason": "BAB đang trong xu hướng tăng nhưng chỉ số kỹ thuật yếu (MACD âm, thanh khoản thấp). Tỷ lệ rủi ro/lợi nhuận hiện tại không hấp dẫn do kỳ vọng lợi nhuận âm.",
+  "key_risks": [
+    "Thanh khoản thấp (Volume ratio 20D thấp)",
+    "Áp lực bán từ khối tự doanh",
+    "Chênh lệch cung cầu (Order-book imbalance) tiêu cực"
+  ],
+  "monitoring_triggers": [
+    "Sự cải thiện của thanh khoản (Volume ratio > 1.0)",
+    "MACD histogram cắt lên trên 0",
+    "Dòng tiền khối ngoại duy trì mua ròng ổn định"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "WATCHLIST",
+  "decision_agreement": false
+}

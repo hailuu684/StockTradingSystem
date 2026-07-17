@@ -1,0 +1,37 @@
+{
+  "action": "BUY_CANDIDATE",
+  "confidence": 0.68,
+  "horizon": "3M",
+  "entry_price_low": 16186.5,
+  "entry_price_high": 16513.5,
+  "stop_loss": 15749.93,
+  "base_target": 16679.65,
+  "bull_target": 17850.18,
+  "bear_target": 14177.7,
+  "suggested_quantity": 9174,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "pullback",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 15750",
+    "Take partial profit at 16680",
+    "Reduce position if RSI exceeds 80",
+    "Exit if MACD histogram continues to widen negatively"
+  ],
+  "reason": "MSB đang trong nhịp điều chỉnh kỹ thuật về MA20 với định giá P/B hấp dẫn (1.16) và xu hướng tăng trung hạn mạnh mẽ. Dòng tiền ngoại đang mua ròng tích cực, hỗ trợ cho kịch bản hồi phục.",
+  "key_risks": [
+    "Áp lực bán từ sổ lệnh (order-book imbalance âm)",
+    "MACD histogram tiêu cực cho thấy động lượng ngắn hạn suy yếu",
+    "Biến động thị trường chung có thể kéo giá thủng hỗ trợ MA20"
+  ],
+  "monitoring_triggers": [
+    "Theo dõi khối lượng giao dịch tại vùng giá 16200",
+    "Giám sát dòng tiền khối ngoại 5 phiên tiếp theo",
+    "Cảnh báo nếu giá đóng cửa dưới 15750"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "BUY_CANDIDATE",
+  "decision_agreement": false
+}

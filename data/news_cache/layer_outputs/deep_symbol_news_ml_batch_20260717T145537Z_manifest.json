@@ -1,0 +1,44 @@
+{
+  "profile": "ml",
+  "run_mode": "batch",
+  "rows": 199,
+  "columns": [
+    "source",
+    "url",
+    "title",
+    "short_description",
+    "content",
+    "text",
+    "publish_time",
+    "author",
+    "category",
+    "tags",
+    "view_counts",
+    "image_url",
+    "crawl_time_utc",
+    "text_len",
+    "content_len"
+  ],
+  "files": [
+    "/home/luutunghai@gmail.com/projects/Forex/Stocks/data/news_cache/layer_outputs/deep_symbol_news_ml_batch_20260717T145537Z.csv"
+  ],
+  "metadata": {
+    "profile": "ml",
+    "run_mode": "batch",
+    "target_sites": [
+      "cafef",
+      "vietstock",
+      "vneconomy",
+      "vnexpress"
+    ],
+    "site_row_counts": {
+      "cafef": 50,
+      "vietstock": 100,
+      "vneconomy": 0,
+      "vnexpress": 56
+    },
+    "row_count": 199,
+    "created_at_utc": "2026-07-17T14:55:37.429180+00:00"
+  },
+  "created_at_utc": "2026-07-17T14:55:37.462190+00:00"
+}

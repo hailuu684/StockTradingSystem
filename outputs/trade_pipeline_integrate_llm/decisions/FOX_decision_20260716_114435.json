@@ -1,0 +1,36 @@
+{
+  "action": "BUY_CANDIDATE",
+  "confidence": 0.65,
+  "horizon": "3M",
+  "entry_price_low": 66330.0,
+  "entry_price_high": 67670.0,
+  "stop_loss": 65660.0,
+  "base_target": 77165.368,
+  "bull_target": 81795.29,
+  "bear_target": 63518.107,
+  "suggested_quantity": 2238,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "staged_accumulation",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 65660.0",
+    "Take partial profit at 77165.0",
+    "Reduce if RSI14 fails to recover above 30 within 10 trading days"
+  ],
+  "reason": "FOX đang ở vùng quá bán (RSI 19.97) với định giá hấp dẫn (P/E 12.67, ROE 31.87). Tỷ lệ rủi ro/lợi nhuận 7.58 rất tốt cho việc tích lũy dần trong vùng giá hiện tại.",
+  "key_risks": [
+    "Xu hướng ngắn hạn tiêu cực (RSI thấp, MACD âm)",
+    "Áp lực bán từ khối ngoại hoặc thanh khoản suy giảm",
+    "Biến động thị trường chung ảnh hưởng đến cổ phiếu công nghệ"
+  ],
+  "monitoring_triggers": [
+    "Sự phục hồi của RSI14 lên trên 30",
+    "Sự cải thiện của dòng tiền (Order-book imbalance chuyển sang dương)",
+    "Duy trì trên mức hỗ trợ 65660.0"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "BUY_CANDIDATE",
+  "decision_agreement": false
+}

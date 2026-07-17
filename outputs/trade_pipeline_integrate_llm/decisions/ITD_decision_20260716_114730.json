@@ -1,0 +1,37 @@
+{
+  "action": "IGNORE",
+  "confidence": 0.85,
+  "horizon": "monitoring",
+  "entry_price_low": 14751.0,
+  "entry_price_high": 15049.0,
+  "stop_loss": 14602.0,
+  "base_target": 12565.0,
+  "bull_target": 17193.17,
+  "bear_target": 10680.25,
+  "suggested_quantity": 0,
+  "suggested_position_value": 0.0,
+  "buy_strategy": "wait",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 14602.0",
+    "Reduce if RSI14 fails to recover above 40",
+    "Exit if order-book imbalance remains below -0.7"
+  ],
+  "reason": "ITD có chỉ số kỹ thuật yếu, RSI thấp và dòng tiền từ khối ngoại và tự doanh đều tiêu cực. Tỷ lệ rủi ro/lợi nhuận không hấp dẫn (-7.83) và định giá P/E cao so với chất lượng tài sản.",
+  "key_risks": [
+    "Dòng tiền rút ròng liên tục từ khối ngoại và tự doanh",
+    "Áp lực bán mạnh từ sổ lệnh (order-book imbalance)",
+    "Xu hướng giảm giá trong ngắn hạn và trung hạn",
+    "Định giá P/E cao (41.76) so với hiệu quả sinh lời"
+  ],
+  "monitoring_triggers": [
+    "Sự cải thiện của dòng tiền tự doanh",
+    "RSI14 vượt lên trên mức 50",
+    "Khối lượng giao dịch tăng đột biến vượt trung bình 20 phiên"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "IGNORE",
+  "llm_action": "IGNORE",
+  "decision_agreement": true
+}

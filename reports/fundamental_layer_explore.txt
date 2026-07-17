@@ -1,0 +1,318 @@
+==================================================
+      FUNDAMENTAL LAYER EXPLORATION REPORT        
+==================================================
+
+=== METHOD: mbs.income_statement(period='quarter') ===
+Total Columns: 69
+
+All Columns:
+  - period
+  - 1_1_lai_tu_cac_tai_san_tai_chinh_ghi_nhan_thong_qua_lai_lo_fvtpl
+  - lai_ban_cac_tai_san_tai_chinh
+  - chenh_lech_tang_danh_gia_lai_cac_tstc_thong_qua_lai_lo
+  - co_tuc_tien_lai_phat_sinh_tu_tai_san_tai_chinh_pvtpl
+  - chenh_lech_giam_do_danh_gia_lai_phai_tra_chung_quyen_dang_luu_hanh
+  - 1_2_lai_tu_cac_khoan_dau_tu_nam_giu_den_ngay_dao_han_htm
+  - 1_3_lai_tu_cac_khoan_cho_vay_va_phai_thu
+  - 1_4_lai_tu_cac_tai_san_tai_chinh_san_sang_de_ban_afs
+  - 1_6_doanh_thu_moi_gioi_chung_khoan
+  - doanh_thu_hoat_dong_dau_tu_chung_khoan_gop_von
+  - 1_7_doanh_thu_bao_lanh_phat_hanh_dai_ly_phat_hanh_chung_khoan
+  - doanh_thu_quan_ly_danh_muc_dau_tu_cho_nguoi_uy_thac_dau_tu
+  - 1_8_doanh_thu_hoat_dong_tu_van
+  - 1_9_doanh_thu_hoat_dong_uy_thac_dau_gia
+  - 1_10_doanh_thu_luu_ky_chung_khoan
+  - doanh_thu_cho_thue_su_dung_tai_san
+  - 1_11_thu_nhap_hoat_dong_khac
+  - deduction_from_revenue
+  - cong_doanh_thu_hoat_dong_01_11
+  - net_revenue
+  - 2_1_lo_cac_tai_san_tai_chinh_ghi_nhan_thong_qua_lo_fvtpl
+  - a_lo_ban_cac_tai_san_tai_chinh
+  - chenh_lech_giam_danh_gia_lai_cac_tstc_thong_qua_lai_lo
+  - c_chi_phi_giao_dich_mua_cac_tai_san_tai_chinh_fvtpl
+  - chenh_lech_tang_do_danh_gia_lai_phai_tra_chung_quyen_dang_luu_hanh
+  - 2_3_chi_phi_lai_vay_lo_tu_cac_khoan_cho_vay_va_phai_thu
+  - 2_4_lo_ban_cac_tai_san_tai_chinh_san_sang_de_ban_afs
+  - chi_phi_du_phong_tstc_xu_ly_ton_that_cac_khoan_phai_thu_kho_doi_va_lo_suy_giam_tstc_va_chi_phi_di_vay_cua_cac_khoan_cho_vay
+  - 2_6_chi_phi_hoat_dong_tu_doanh
+  - 2_7_chi_phi_moi_gioi_chung_khoan
+  - 2_8_chi_phi_hoat_dong_bao_lanh_dai_ly_phat_hanh_chung_khoan
+  - 2_9_chi_phi_tu_van
+  - 2_11_chi_phi_luu_ky_chung_khoan
+  - 2_12_chi_phi_khac
+  - chi_phi_truc_tiep_hoat_dong_kinh_doanh_chung_khoan
+  - chi_phi_du_phong_chung_khoan
+  - cong_chi_phi_hoat_dong_21_33
+  - loi_nhuan_gop_cua_hoat_dong_kinh_doanh
+  - 3_1_chenh_lech_lai_ty_gia_hoi_doai_da_va_chua_thuc_hien
+  - 3_2_doanh_thu_du_thu_co_tuc_lai_tien_gui_khong_co_dinh_phat_sinh_trong_ky
+  - 3_4_doanh_thu_khac_ve_dau_tu
+  - cong_doanh_thu_hoat_dong_tai_chinh_41_44
+  - 4_1_chenh_lech_lo_ty_gia_hoi_doai_da_va_chua_thuc_hien
+  - 4_2_chi_phi_lai_vay
+  - 4_4_chi_phi_dau_tu_khac
+  - cong_chi_phi_tai_chinh_51_54
+  - v_chi_phi_ban_hang
+  - vi_chi_phi_quan_ly_cong_ty_chung_khoan
+  - vii_ket_qua_hoat_dong
+  - 8_1_thu_nhap_khac
+  - 8_2_chi_phi_khac
+  - cong_ket_qua_hoat_dong_khac
+  - lai_lo_tu_cong_ty_lien_doanh_lien_ket
+  - ix_tong_loi_nhuan_ke_toan_truoc_thue
+  - 9_1_loi_nhuan_da_thuc_hien
+  - 9_2_loi_nhuan_chua_thuc_hien
+  - x_chi_phi_thue_thu_nhap_doanh_nghiep
+  - 10_1_chi_phi_thue_tndn_hien_hanh
+  - 10_2_chi_phi_thue_tndn_hoan_lai
+  - xi_loi_nhuan_ke_toan_sau_thue_tndn
+  - 11_1_loi_nhuan_sau_thue_phan_bo_cho_chu_so_huu
+  - 11_3_loi_nhuan_thuan_phan_bo_cho_loi_ich_co_dong_khong_kiem_soat
+  - xii_thu_nhap_lo_toan_dien_khac_sau_thue_tndn
+  - 12_1_lai_lo_tu_danh_gia_lai_cac_khoan_dau_tu_giu_den_ngay_dao_han
+  - 12_2_lai_lo_tu_danh_gia_lai_cac_tai_san_tai_chinh_san_sang_de_ban
+  - tong_thu_nhap_toan_dien
+  - xiii_thu_nhap_thuan_tren_co_phieu_pho_thong
+  - 13_1_lai_co_ban_tren_co_phieu_dong_1_co_phieu_vn
+
+Empty Columns (0):
+  (None - All columns contain data)
+--------------------------------------------------
+
+=== METHOD: mbs.balance_sheet(period='quarter') ===
+Total Columns: 132
+
+All Columns:
+  - dau_tu_ngan_han
+  - dau_tu_ngan_han_cua_nguoi_uy_thac_dau_tu
+  - chung_khoan_nam_giu_den_ngay_dao_han
+  - chung_khoan_san_sang_de_ban
+  - gia_tri_hao_mon_luy_ke
+  - nguyen_gia
+  - 1_cac_khoan_phai_thu_dai_han
+  - 1_cam_co_the_chap_ky_quy_ky_cuoc_dai_han
+  - 1_nguon_kinh_phi
+  - 1_tien_va_cac_khoan_tuong_duong_tien
+  - 1_tai_san_co_dinh_huu_hinh
+  - 1_tam_ung
+  - 1_vay_va_no_thue_tai_chinh_dai_han
+  - 1_vay_va_no_thue_tai_chinh_ngan_han
+  - 1_von_dau_tu_cua_chu_so_huu
+  - 1_1_phai_thu_dai_han_cua_khach_hang
+  - 1_1_tien
+  - 1_1_vay_ngan_han
+  - 1_1_von_gop_cua_chu_so_huu
+  - 1_2_cac_khoan_tuong_duong_tien
+  - 1_2_thang_du_von_co_phan
+  - 1_2_von_kinh_doanh_o_cac_don_vi_truc_thuoc
+  - 1_3_phai_thu_dai_han_noi_bo
+  - 1_4_phai_thu_dai_han_khac
+  - 1_4_von_khac_cua_chu_so_huu
+  - 1_5_co_phieu_quy
+  - 1_5_du_phong_phai_thu_dai_han_kho_doi
+  - 10_nhan_ky_quy_ky_cuoc_dai_han
+  - 10_phai_thu_noi_bo_ngan_han
+  - 10_thue_va_cac_khoan_phai_nop_nha_nuoc
+  - 11_phai_tra_nguoi_lao_dong
+  - 11_phai_tra_phai_nop_khac_dai_han
+  - 12_cac_khoan_phai_thu_khac
+  - 12_cac_khoan_trich_nop_phuc_loi_nhan_vien
+  - 12_du_phong_phai_tra_dai_han
+  - 13_chi_phi_phai_tra_ngan_han
+  - 13_du_phong_boi_thuong_thiet_hai_cho_nha_dau_tu
+  - 13_du_phong_suy_giam_gia_tri_cac_khoan_phai_thu
+  - 14_phai_tra_noi_bo_ngan_han
+  - 14_thue_thu_nhap_hoan_lai_phai_tra
+  - 15_doanh_thu_chua_thuc_hien_ngan_han
+  - 15_quy_phat_trien_khoa_hoc_va_cong_nghe
+  - 16_nhan_ky_quy_ky_cuoc_ngan_han
+  - 17_cac_khoan_phai_tra_phai_nop_khac_ngan_han
+  - 18_du_phong_phai_tra_ngan_han
+  - 19_quy_khen_thuong_phuc_loi
+  - 2_chi_phi_tra_truoc_dai_han
+  - 2_chenh_lech_danh_gia_lai_tai_san_theo_gia_tri_hop_ly
+  - 2_cac_khoan_dau_tu
+  - 2_cac_tai_san_tai_chinh_ghi_nhan_thong_qua_lai_lo_fvtpl
+  - 2_nguon_kinh_phi_da_hinh_thanh_tscd
+  - 2_tai_san_co_dinh_thue_tai_chinh
+  - 2_vat_tu_van_phong_cong_cu_dung_cu
+  - 2_1_cac_khoan_dau_tu_nam_giu_den_ngay_dao_han
+  - 2_2_dau_tu_vao_cong_ty_con
+  - 2_3_dau_tu_vao_cong_ty_lien_ket_lien_doanh
+  - 2_4_dau_tu_chung_khoan_dai_han
+  - 2_5_dau_tu_dai_han_khac
+  - 2_6_du_phong_giam_gia_dau_tu_dai_han
+  - 3_chi_phi_tra_truoc_ngan_han
+  - 3_chenh_lech_ty_gia_hoi_doai
+  - 3_cac_khoan_dau_tu_nam_giu_den_ngay_dao_han_htm
+  - 3_tai_san_co_dinh_vo_hinh
+  - 3_tai_san_thue_thu_nhap_hoan_lai
+  - 4_cac_khoan_cho_vay
+  - 4_cam_co_the_chap_ky_quy_ky_cuoc_ngan_han
+  - 4_quy_du_tru_dieu_le
+  - 4_tien_nop_quy_ho_tro_thanh_toan
+  - 4_trai_phieu_phat_hanh_dai_han
+  - 5_cac_tai_san_tai_chinh_san_san_de_ban_afs
+  - 5_phai_tra_nguoi_ban_dai_han
+  - 5_quy_du_phong_tai_chinh_va_rui_ro_nghe_nghiep
+  - 5_tai_san_dai_han_khac
+  - 5_tai_san_ngan_han_khac
+  - 6_du_phong_suy_giam_gia_tri_tai_san_tai_chinh_va_tai_san_the_chap
+  - 6_loi_the_thuong_mai
+  - 6_phai_tra_hoat_dong_giao_dich_chung_khoan
+  - 6_quy_khac_thuoc_von_chu_so_huu
+  - 7_cac_khoan_phai_thu_ngan_han
+  - 7_loi_nhuan_sau_thue_chua_phan_phoi
+  - 7_1_loi_nhuan_da_thuc_hien
+  - 7_1_phai_thu_ban_cac_tai_san_tai_chinh
+  - 7_2_loi_nhuan_chua_thuc_hien
+  - 7_2_phai_thu_va_du_thu_co_tuc_tien_lai_cac_tai_san_tai_chinh
+  - 7_2_1_phai_thu_co_tuc_tien_lai_den_ngay_nhan
+  - 7_2_2_du_thu_co_tuc_tien_lai_chua_den_ngay_nhan
+  - 8_loi_ich_co_dong_khong_nam_quyen_kiem_soat
+  - 8_phai_tra_nguoi_ban_ngan_han
+  - 8_phai_tra_noi_bo_dai_han
+  - 8_thue_gtgt_con_duoc_khau_tru
+  - 9_doanh_thu_chua_thuc_hien_dai_han
+  - 9_nguoi_mua_tra_tien_truoc_ngan_han
+  - 9_phai_thu_cac_dich_vu_ctck_cung_cap
+  - a_no_phai_tra_300_310_340
+  - a_tai_san_ngan_han
+  - b_tai_san_dai_han
+  - b_von_chu_so_huu_400_410_420
+  - du_phong_cac_khoan_phai_thu_ngan_han_kho_doi
+  - du_phong_giam_gia_dau_tu_ngan_han
+  - giao_dich_mua_ban_lai_trai_phieu_chinh_phu_ts
+  - hang_ton_kho_chi_tiet
+  - i_no_ngan_han
+  - i_tai_san_tai_chinh_dai_han
+  - i_tai_san_tai_chinh_ngan_han
+  - i_von_chu_so_huu
+  - ii_nguon_kinh_phi_va_quy_khac
+  - ii_no_dai_han
+  - ii_tai_san_co_dinh
+  - ii_tai_san_ngan_han_khac
+  - iii_bat_dong_san_dau_tu
+  - iv_chi_phi_xay_dung_co_ban_do_dang
+  - nguon_von_dau_tu_xdcb
+  - phai_thu_hoat_dong_giao_dich_chung_khoan
+  - phai_tra_ho_co_tuc_goc_va_lai_trai_phieu
+  - phai_tra_to_chuc_phat_hanh_chung_khoan
+  - v_tai_san_dai_han_khac
+  - von_nhan_uy_thac_dau_tu_dai_han
+  - assets
+  - cac_khoan_dau_tu_tai_chinh_ngan_han
+  - co_phieu_pho_thong
+  - du_phong_giam_gia_hang_ton_kho
+  - du_phong_tro_cap_mat_viec_lam
+  - giao_dich_mua_ban_lai_trai_phieu_chinh_phu
+  - inventories
+  - period
+  - phai_thu_khach_hang
+  - quy_dau_tu_phat_trien
+  - quy_ho_tro_sap_xep_doanh_nghiep
+  - thue_va_cac_khoan_khac_phai_thu_cua_nha_nuoc
+  - total_assets
+  - total_liabilities_equity
+  - tra_truoc_cho_nguoi_ban
+
+Empty Columns (0):
+  (None - All columns contain data)
+--------------------------------------------------
+
+=== METHOD: mbs.cash_flow(period='quarter') ===
+Total Columns: 67
+
+All Columns:
+  - period
+  - profit_before_tax
+  - 2_dieu_chinh_cho_cac_khoan
+  - khau_hao_tai_san_co_dinh
+  - cac_khoan_lap_du_phong
+  - lai_lo_chenh_lech_ty_gia_hoi_doai_chua_thuc_hien
+  - chi_phi_phai_tra_chi_phi_tra_truoc
+  - lai_lo_tu_hoat_dong_dau_tu_dau_tu_cong_ty_con_lien_doanh_lien_ket
+  - chi_phi_lai_vay
+  - du_thu_tien_lai
+  - 3_tang_cac_chi_phi_phi_tien_te
+  - lo_danh_gia_gia_tri_cac_tai_san_tai_chinh_ghi_nhan_thong_qua_ket_qua_kinh_doanh
+  - 4_giam_cac_doanh_thu_phi_tien_te
+  - lai_danh_gia_gia_tri_cac_tai_san_tai_chinh_ghi_nhan_thong_qua_ket_qua_kinh_doanh
+  - lai_ve_ghi_nhan_chenh_lech_danh_gia_theo_gia_tri_hop_ly_tstc_san_sang_de_ban_afs_khi_phan_loai_lai
+  - 5_thay_doi_tai_san_va_no_phai_tra_hoat_dong
+  - tang_giam_tai_san_tai_chinh_ghi_nhan_thong_qua_lai_lo
+  - tang_giam_cac_khoan_dau_tu_giu_den_ngay_dao_han
+  - tang_giam_cac_khoan_cho_vay_khach_hang
+  - tang_giam_tai_san_tai_chinh_san_sang_de_ban
+  - 6_loi_nhuan_tu_hoat_dong_kinh_doanh_truoc_thay_doi_von_luu_dong
+  - tang_giam_phai_thu_ban_cac_tai_san_tai_chinh
+  - tang_giam_phai_thu_tien_lai_cac_tai_san_tai_chinh
+  - tang_giam_cac_khoan_phai_thu_cac_dich_vu_ctck_cung_cap
+  - tang_giam_cac_khoan_phai_thu_khac
+  - tang_giam_cac_tai_san_khac
+  - tang_giam_cac_khoan_phai_tra_khong_ke_lai_vay_phai_tra_thue_thu_nhap_doanh_nghiep_phai_nop
+  - tang_giam_chi_phi_tra_truoc
+  - thue_thu_nhap_doanh_nghiep_da_nop
+  - tien_lai_vay_da_tra
+  - tang_giam_phai_tra_cho_nguoi_ban
+  - tang_giam_cac_khoan_trich_nop_phuc_loi_nhan_vien
+  - tang_giam_thue_va_cac_khoan_phai_nop_nha_nuoc
+  - tang_giam_phai_tra_nguoi_lao_dong
+  - tang_giam_phai_tra_phai_nop_khac
+  - tien_chi_khac_cho_hoat_dong_kinh_doanh
+  - luu_chuyen_tien_thuan_tu_hoat_dong_kinh_doanh_chung_khoan
+  - payment_for_fixed_assets_constructions_and_other_long_term_assets
+  - receipts_from_disposal_of_fixed_assets_and_other_long_term_assets
+  - 7_tien_thu_ve_co_tuc_va_loi_nhuan_duoc_chia
+  - luu_chuyen_tien_thuan_tu_hoat_dong_dau_tu
+  - receipts_from_equity_issue_and_owners_capital_contribution
+  - 2_tien_chi_tra_von_gop_cho_cac_chu_so_huu_mua_lai_co_phieu_quy
+  - 3_tien_vay_goc
+  - 3_2_tien_vay_khac
+  - 4_tien_chi_tra_no_goc_vay
+  - 4_3_tien_chi_tra_goc_no_vay_khac
+  - net_cash_flows_from_financing_activities
+  - iv_luu_chuyen_tien_thuan_trong_ky
+  - v_tien_va_tuong_duong_tien_dau_ky
+  - tien_gui_ngan_hang_dau_ky
+  - tien_gui_ngan_hang_cho_hoat_dong_ctck
+  - cac_khoan_tuong_duong_tien
+  - cash_and_cash_equivalents_at_end_of_the_period
+  - tien_gui_ngan_hang_cuoi_ky
+  - 1_tien_thu_ban_chung_khoan_moi_gioi_cho_khach_hang
+  - 2_tien_chi_mua_chung_khoan_moi_gioi_cho_khach_hang
+  - 9_nhan_tien_gui_de_thanh_toan_giao_dich_chung_khoan_cua_khach_hang
+  - 14_chi_tra_phi_luu_ky_chung_khoan_cua_khach_hang
+  - 17_tien_thu_cua_to_chuc_phat_hanh_chung_khoan
+  - 18_tien_chi_tra_to_chuc_phat_hanh_chung_khoan
+  - tang_giam_tien_thuan_trong_ky
+  - ii_tien_va_cac_khoan_tuong_duong_tien_dau_ky_cua_khach_hang
+  - tien_gui_cua_nha_dau_tu_ve_giao_dich_chung_khoan_theo_phuong_thuc_ctck_quan_ly
+  - tien_gui_tong_hop_giao_dich_chung_khoan_cho_khach_hang
+  - tien_gui_cua_to_chuc_phat_hanh
+  - iii_tien_va_cac_khoan_tuong_duong_tien_cuoi_ky_cua_khach_hang
+
+Empty Columns (0):
+  (None - All columns contain data)
+--------------------------------------------------
+
+=== METHOD: mbs.financial_health() ===
+Total Columns: 10
+
+All Columns:
+  - ticker
+  - period
+  - net_revenue
+  - inventories
+  - total_assets
+  - net_cash_flows_from_financing_activities
+  - pe
+  - pb
+  - trailing_eps
+  - book_value_per_share
+
+Empty Columns (1):
+  - inventories
+--------------------------------------------------
+

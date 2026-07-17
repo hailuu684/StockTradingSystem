@@ -1,0 +1,29 @@
+DEEP SYMBOL LLM ANALYSIS REPORT
+================================================================================
+Generated at: 2026-07-17T09:28:22
+Symbols: TCB, MBS
+Financial cache path: data/financial_statements
+Outputs: outputs/deep_symbol_llm
+
+ACTION SUMMARY
+--------------------------------------------------------------------------------
+BUY_CANDIDATE     : 0
+WATCHLIST         : 2
+HOLD_MONITOR      : 0
+REDUCE_OR_EXIT    : 0
+IGNORE            : 0
+
+BUY CANDIDATES
+--------------------------------------------------------------------------------
+Không có symbol nào đáng để BUY.
+
+WATCHLIST
+--------------------------------------------------------------------------------
+TCB      | Ngân hàng Thương mại Cổ phần Kỹ thươ | conf=0.55 | outputs/deep_symbol_llm/markdown/TCB_deep_analysis_20260717_090051.md
+MBS      | Công ty Cổ phần Chứng khoán MB       | conf=0.60 | outputs/deep_symbol_llm/markdown/MBS_deep_analysis_20260717_090051.md
+
+ALL RESULTS
+--------------------------------------------------------------------------------
+symbol | action | confidence | llm_status | financial_markdown | news_cache | markdown
+TCB      | WATCHLIST          | 0.55 | success  | data/financial_statements/quarter_1/TCB_Ngân_hàng_Thương_mại_Cổ_phần_Kỹ_thương_Việt_Nam_2026_Q1_structured_financial_report.md | data/news_cache/symbols/TCB_news_20260717.csv | outputs/deep_symbol_llm/markdown/TCB_deep_analysis_20260717_090051.md
+MBS      | WATCHLIST          | 0.60 | success  | data/financial_statements/quarter_2/MBS_Công_ty_Cổ_phần_Chứng_khoán_MB_2026_Q2_structured_financial_report.md | data/news_cache/symbols/MBS_news_20260717.csv | outputs/deep_symbol_llm/markdown/MBS_deep_analysis_20260717_090051.md

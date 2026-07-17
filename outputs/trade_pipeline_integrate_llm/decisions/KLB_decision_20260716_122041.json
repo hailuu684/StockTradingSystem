@@ -1,0 +1,36 @@
+{
+  "action": "BUY_CANDIDATE",
+  "confidence": 0.72,
+  "horizon": "3M",
+  "entry_price_low": 12424.5,
+  "entry_price_high": 12675.5,
+  "stop_loss": 12076.5,
+  "base_target": 31316.28,
+  "bull_target": 33195.26,
+  "bear_target": 11738.33,
+  "suggested_quantity": 11952,
+  "suggested_position_value": 150000000.0,
+  "buy_strategy": "pullback",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 12076.5",
+    "Take partial profit at 20000",
+    "Reduce position if RSI exceeds 80"
+  ],
+  "reason": "KLB có định giá P/E và P/B rất hấp dẫn cùng ROE cao. Kỹ thuật đang ở vùng pullback MA20 với xu hướng mạnh, tỷ lệ rủi ro/lợi nhuận cực kỳ tốt dù dòng tiền tự doanh đang bán ròng.",
+  "key_risks": [
+    "Dòng tiền tự doanh bán ròng mạnh gây áp lực ngắn hạn",
+    "Thanh khoản thấp có thể gây khó khăn khi thoát vị thế lớn",
+    "Biến động thị trường chung ảnh hưởng đến nhóm ngân hàng nhỏ"
+  ],
+  "monitoring_triggers": [
+    "Thay đổi đột biến trong dòng tiền tự doanh",
+    "Vi phạm ngưỡng hỗ trợ 12076.5",
+    "Sự thay đổi trong chỉ số RSI14"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "WATCHLIST",
+  "llm_action": "BUY_CANDIDATE",
+  "decision_agreement": false
+}

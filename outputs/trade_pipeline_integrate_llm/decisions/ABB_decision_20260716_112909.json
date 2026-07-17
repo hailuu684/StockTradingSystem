@@ -1,0 +1,36 @@
+{
+  "action": "BUY_CANDIDATE",
+  "confidence": 0.66,
+  "horizon": "3M",
+  "entry_price_low": 17523.0,
+  "entry_price_high": 17877.0,
+  "stop_loss": 16745.94,
+  "base_target": 19572.21,
+  "bull_target": 20746.54,
+  "bear_target": 16636.38,
+  "suggested_quantity": 7861,
+  "suggested_position_value": 139140000.0,
+  "buy_strategy": "pullback",
+  "sell_or_reduce_rules": [
+    "Exit if price closes below 16745.94",
+    "Take profit at 19572.21",
+    "Reduce position if RSI14 exceeds 85"
+  ],
+  "reason": "ABB cho thấy xu hướng tăng mạnh với định giá P/E hấp dẫn (4.74) và dòng tiền từ khối tự doanh tích cực. Tuy nhiên, RSI đang ở vùng quá mua (77.6) nên cần chờ nhịp điều chỉnh nhẹ trong vùng entry để tối ưu hóa tỷ lệ rủi ro/lợi nhuận.",
+  "key_risks": [
+    "RSI quá mua có thể dẫn đến áp lực chốt lời ngắn hạn",
+    "Dòng tiền khối ngoại bán ròng 5 phiên gần nhất",
+    "Chênh lệch cung cầu (order-book imbalance) tiêu cực"
+  ],
+  "monitoring_triggers": [
+    "Theo dõi khối lượng giao dịch nếu giá thủng 17500",
+    "Giám sát biến động dòng tiền khối tự doanh",
+    "Cập nhật xu hướng RSI để tránh bẫy tăng giá"
+  ],
+  "decision_engine": "project_gemini",
+  "llm_status": "success",
+  "decision_source": "llm",
+  "heuristic_action": "HOLD_MONITOR",
+  "llm_action": "BUY_CANDIDATE",
+  "decision_agreement": false
+}
