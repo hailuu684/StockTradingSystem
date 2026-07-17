@@ -1,6 +1,4 @@
-# source /home/luutunghai@gmail.com/.venv/bin/activate
-# deactivate
-# ./installer.run -- --non-interactive --api-key "vnstock_aa7b4b1f5b7ddd27be0eb4ac24e57241" --venv-path "/home/luutunghai@gmail.com/.venv"
+
 
 import os
 import sys
