@@ -1,8 +1,8 @@
 {
     "llm_config": {
       "provider": "gemini",
-      "api_key_env": "AIzaSyC9mRECNTyI6o9dPZW5wYNlgzm7UVVpwR8",
-      "api_key": "AIzaSyC9mRECNTyI6o9dPZW5wYNlgzm7UVVpwR8",
+      "api_key_env": "your_key",
+      "api_key": "your_key",
       "llm_model": "gemini-3.1-flash-lite",
       "temperature": 0.2,
       "max_output_tokens": 8000,
